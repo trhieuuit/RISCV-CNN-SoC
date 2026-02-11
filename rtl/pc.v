@@ -30,7 +30,7 @@ module pc(
 
 always @(posedge clk_i) begin
 	if (!rst_ni)
-		pc_o = 0;
+		pc_o <= 0;
 		
 	else begin
 		if (branch_i) 
