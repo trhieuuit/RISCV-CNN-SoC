@@ -143,7 +143,7 @@ module control_unit(
                 reg_write_en_out = `REG_WRITE_EN_1;
                 op1sel_out       = `DATA1; // Bỏ qua
                 op2sel_out       = `IMM; 
-                wb_sel_out       = `IMM_WB; // Bê nguyên cục hằng số ném vào Register
+                wb_sel_out       = `IMM_WB; 
                 imm_sel_out      = `U_TYPE;
             end
 
