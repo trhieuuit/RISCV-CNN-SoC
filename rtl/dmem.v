@@ -27,15 +27,13 @@ module dmem#(
 	)(
     input wire                      clk_i,
     input wire                      rst_ni,
-    input wire [ADDR_WIDTH - 1:0]   addr_i,    // can thay doi
+    input wire [ADDR_WIDTH - 1:0]   addr_i,   
     input wire [31:0]               data_i,
     input wire                      we_i,
-    
+                 
     output reg [31:0]               mem_o
 );
 
-    
-    
     reg [DATA_WIDTH - 1:0] registers [NUM_VAR - 1 :0];
     
     integer i;

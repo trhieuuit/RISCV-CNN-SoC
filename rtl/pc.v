@@ -24,6 +24,7 @@ module pc(
 	input wire 			rst_ni,
 	input wire 			branch_i,
 	input wire [31:0]   jaddr_i,
+	input wire          stall_i,
 	
 	output reg [31:0]   pc_o
 );
@@ -32,10 +33,10 @@ always @(posedge clk_i) begin
 	if (!rst_ni)
 		pc_o <= 0;
 		
-	else begin
+	else if (!stall_i) begin
 		if (branch_i) 
 			pc_o <= jaddr_i;
-		else
+		else 
 			pc_o <= pc_o + 32'd4;
 	end
 end

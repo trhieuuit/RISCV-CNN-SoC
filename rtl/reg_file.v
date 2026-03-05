@@ -42,8 +42,12 @@ module reg_file #(
 		integer i;
 		
 		//Output 
-		assign rdata1_o = (raddr1_i == 5'b0) ? 32'b0 : registers[raddr1_i];
-		assign rdata2_o = (raddr2_i == 5'b0) ? 32'b0 : registers[raddr2_i];
+		// Refined Output Logic (Internal Forwarding / Transparency)
+        assign rdata1_o = (raddr1_i == 5'b0) ? 32'b0 : 
+                          ((we_i && (waddr_i == raddr1_i)) ? wdata_i : registers[raddr1_i]);
+        
+        assign rdata2_o = (raddr2_i == 5'b0) ? 32'b0 : 
+                          ((we_i && (waddr_i == raddr2_i)) ? wdata_i : registers[raddr2_i]);
 	
 		//Input
 		always @(posedge clk_i) begin

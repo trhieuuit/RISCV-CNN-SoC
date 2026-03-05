@@ -25,8 +25,9 @@ module imem#(
 	parameter NUM_INS = 1000
 	)(
 	input wire 		   clk_i,
-	input wire 		   rst_i,
+	input wire        stall_i,
 	input wire [31:0]  addr_i,  
+	
 	
 	output reg [31:0]  imem_o
 );
@@ -38,7 +39,8 @@ module imem#(
 	end
 	
 	always @(posedge clk_i) begin
-        imem_o <= rom[addr_i[31:2]];
+	    if (!stall_i)
+            imem_o <= rom[addr_i[31:2]];
     end
 
 endmodule

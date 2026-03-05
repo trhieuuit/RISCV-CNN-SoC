@@ -30,7 +30,7 @@ module bj_detect(branch_jump, data1, data2, pc_sel_out);
     reg lt;
     wire out1, out2, out3, out4, out5;
 
-    assign #2 pc_sel_out = pc_sel;
+    assign pc_sel_out = pc_sel;
 
     assign eq = data1 == data2 ? 1 : 0;
     assign unsign_lt = data1 < data2;
