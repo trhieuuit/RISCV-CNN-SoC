@@ -1,0 +1,341 @@
+Time resolution is 1 ps
+==================================================
+      BẮT ĐẦU MÔ PHỎNG SoC RISC-V (PRO MODE)      
+==================================================
+Time: 40000 | PC = 0x00000000 | Inst = 0x00000013 (NOP   )
+-----------------------------------------------------------------
+Time: 50000 | PC = 0x00000004 | Inst = 0x08000113 (ALU-I )
+-----------------------------------------------------------------
+Time: 60000 | PC = 0x00000008 | Inst = 0x008000ef (JAL   )
+-----------------------------------------------------------------
+Time: 70000 | PC = 0x0000000c | Inst = 0x0000006f (JAL   )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x0000000c
+-----------------------------------------------------------------
+Time: 80000 | PC = 0x0000000c | Inst = 0xfd010113 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x00000080
+-----------------------------------------------------------------
+Time: 90000 | PC = 0x00000010 | Inst = 0xfd010113 (ALU-I )
+          -> [WB]  WRITE REG | x1 <- 0x00000008
+-----------------------------------------------------------------
+Time: 100000 | PC = 0x00000014 | Inst = 0x02112623 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 01, RS2_sel: 00
+-----------------------------------------------------------------
+Time: 110000 | PC = 0x00000018 | Inst = 0x02812423 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x2 <- 0x00000050
+-----------------------------------------------------------------
+Time: 120000 | PC = 0x0000001c | Inst = 0x03010413 (ALU-I )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [MEM] WRITE RAM | Addr: 0x0000004c <- Data: 0x00000008
+          -> [WB]  WRITE REG | x2 <- 0x00000020
+-----------------------------------------------------------------
+Time: 130000 | PC = 0x00000020 | Inst = 0x00500793 (ALU-I )
+          -> [MEM] WRITE RAM | Addr: 0x00000048 <- Data: 0x00000000
+-----------------------------------------------------------------
+Time: 140000 | PC = 0x00000024 | Inst = 0xfcf42c23 (STORE )
+-----------------------------------------------------------------
+Time: 150000 | PC = 0x00000028 | Inst = 0x00100793 (ALU-I )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x8 <- 0x00000050
+-----------------------------------------------------------------
+Time: 160000 | PC = 0x0000002c | Inst = 0xfef42623 (STORE )
+          -> [MEM] WRITE RAM | Addr: 0x00000028 <- Data: 0x00000005
+          -> [WB]  WRITE REG | x15 <- 0x00000005
+-----------------------------------------------------------------
+Time: 170000 | PC = 0x00000030 | Inst = 0x00100793 (ALU-I )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 180000 | PC = 0x00000034 | Inst = 0xfef42423 (STORE )
+          -> [MEM] WRITE RAM | Addr: 0x0000003c <- Data: 0x00000001
+          -> [WB]  WRITE REG | x15 <- 0x00000001
+-----------------------------------------------------------------
+Time: 190000 | PC = 0x00000038 | Inst = 0x06c0006f (JAL   )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 200000 | PC = 0x0000003c | Inst = 0xfec42783 (LOAD  )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x000000a0
+          -> [MEM] WRITE RAM | Addr: 0x00000038 <- Data: 0x00000001
+          -> [WB]  WRITE REG | x15 <- 0x00000001
+-----------------------------------------------------------------
+Time: 210000 | PC = 0x000000a0 | Inst = 0xfef42223 (STORE )
+-----------------------------------------------------------------
+Time: 220000 | PC = 0x000000a4 | Inst = 0xfe842703 (LOAD  )
+-----------------------------------------------------------------
+Time: 230000 | PC = 0x000000a8 | Inst = 0xfd842783 (LOAD  )
+          -> [MEM] WRITE RAM | Addr: 0x00000034 <- Data: 0x00000001
+-----------------------------------------------------------------
+Time: 240000 | PC = 0x000000ac | Inst = 0xf8e7d8e3 (BRANCH)
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000038
+-----------------------------------------------------------------
+Time: 250000 | PC = 0x000000ac | Inst = 0xf8e7d8e3 (BRANCH)
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000028
+          -> [WB]  LOAD REG  | x14 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 260000 | PC = 0x000000b0 | Inst = 0x01400793 (ALU-I )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x00000038
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000005 (Data RAM thô: 0x00000005)
+-----------------------------------------------------------------
+Time: 270000 | PC = 0x00000038 | Inst = 0xfcf42a23 (STORE )
+-----------------------------------------------------------------
+Time: 280000 | PC = 0x0000003c | Inst = 0xfec42783 (LOAD  )
+-----------------------------------------------------------------
+Time: 290000 | PC = 0x00000040 | Inst = 0xfef42223 (STORE )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x00000024 <- Data: 0x00000005
+-----------------------------------------------------------------
+Time: 300000 | PC = 0x00000040 | Inst = 0xfef42223 (STORE )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x0000003c
+-----------------------------------------------------------------
+Time: 310000 | PC = 0x00000044 | Inst = 0xfe842783 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 320000 | PC = 0x00000048 | Inst = 0xfef42023 (STORE )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x00000034 <- Data: 0x00000001
+-----------------------------------------------------------------
+Time: 330000 | PC = 0x00000048 | Inst = 0xfef42023 (STORE )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000038
+-----------------------------------------------------------------
+Time: 340000 | PC = 0x0000004c | Inst = 0xfc042e23 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 350000 | PC = 0x00000050 | Inst = 0x0380006f (JAL   )
+          -> [MEM] WRITE RAM | Addr: 0x00000030 <- Data: 0x00000001
+-----------------------------------------------------------------
+Time: 360000 | PC = 0x00000054 | Inst = 0xfe042783 (LOAD  )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x00000084
+          -> [MEM] WRITE RAM | Addr: 0x0000002c <- Data: 0x00000000
+-----------------------------------------------------------------
+Time: 370000 | PC = 0x00000084 | Inst = 0x0017f793 (ALU-I )
+-----------------------------------------------------------------
+Time: 380000 | PC = 0x00000088 | Inst = 0xfe042783 (LOAD  )
+-----------------------------------------------------------------
+Time: 390000 | PC = 0x0000008c | Inst = 0xfcf044e3 (BRANCH)
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+-----------------------------------------------------------------
+Time: 400000 | PC = 0x0000008c | Inst = 0xfcf044e3 (BRANCH)
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000030
+          -> [WB]  WRITE REG | x15 <- 0x00000001
+-----------------------------------------------------------------
+Time: 410000 | PC = 0x00000090 | Inst = 0xfdc42783 (LOAD  )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x00000050
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 420000 | PC = 0x00000050 | Inst = 0xfef42623 (STORE )
+-----------------------------------------------------------------
+Time: 430000 | PC = 0x00000054 | Inst = 0xfe042783 (LOAD  )
+-----------------------------------------------------------------
+Time: 440000 | PC = 0x00000058 | Inst = 0x0017f793 (ALU-I )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x0000003c <- Data: 0x00000001
+-----------------------------------------------------------------
+Time: 450000 | PC = 0x00000058 | Inst = 0x0017f793 (ALU-I )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000030
+-----------------------------------------------------------------
+Time: 460000 | PC = 0x0000005c | Inst = 0x00078a63 (BRANCH)
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 470000 | PC = 0x00000060 | Inst = 0xfdc42703 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 01, RS2_sel: 00
+-----------------------------------------------------------------
+Time: 480000 | PC = 0x00000064 | Inst = 0xfe442783 (LOAD  )
+          -> [WB]  WRITE REG | x15 <- 0x00000001
+-----------------------------------------------------------------
+Time: 490000 | PC = 0x00000068 | Inst = 0x00f707b3 (ALU-R )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x0000002c
+-----------------------------------------------------------------
+Time: 500000 | PC = 0x00000068 | Inst = 0x00f707b3 (ALU-R )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000034
+          -> [WB]  LOAD REG  | x14 <- 0x00000000 (Data RAM thô: 0x00000000)
+-----------------------------------------------------------------
+Time: 510000 | PC = 0x0000006c | Inst = 0xfcf42e23 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 520000 | PC = 0x00000070 | Inst = 0xfe442783 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 530000 | PC = 0x00000074 | Inst = 0x00179793 (ALU-I )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x0000002c <- Data: 0x00000001
+          -> [WB]  WRITE REG | x15 <- 0x00000001
+-----------------------------------------------------------------
+Time: 540000 | PC = 0x00000074 | Inst = 0x00179793 (ALU-I )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000034
+-----------------------------------------------------------------
+Time: 550000 | PC = 0x00000078 | Inst = 0xfef42223 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 560000 | PC = 0x0000007c | Inst = 0xfe042783 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 570000 | PC = 0x00000080 | Inst = 0x4017d793 (ALU-I )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x00000034 <- Data: 0x00000002
+          -> [WB]  WRITE REG | x15 <- 0x00000002
+-----------------------------------------------------------------
+Time: 580000 | PC = 0x00000080 | Inst = 0x4017d793 (ALU-I )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000030
+-----------------------------------------------------------------
+Time: 590000 | PC = 0x00000084 | Inst = 0xfef42023 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 600000 | PC = 0x00000088 | Inst = 0xfe042783 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 610000 | PC = 0x0000008c | Inst = 0xfcf044e3 (BRANCH)
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x00000030 <- Data: 0x00000000
+          -> [WB]  WRITE REG | x15 <- 0x00000000
+-----------------------------------------------------------------
+Time: 620000 | PC = 0x0000008c | Inst = 0xfcf044e3 (BRANCH)
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000030
+-----------------------------------------------------------------
+Time: 630000 | PC = 0x00000090 | Inst = 0xfdc42783 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000000 (Data RAM thô: 0x00000000)
+-----------------------------------------------------------------
+Time: 640000 | PC = 0x00000094 | Inst = 0xfef42623 (STORE )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+-----------------------------------------------------------------
+Time: 650000 | PC = 0x00000094 | Inst = 0xfef42623 (STORE )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x0000002c
+-----------------------------------------------------------------
+Time: 660000 | PC = 0x00000098 | Inst = 0xfe842783 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 670000 | PC = 0x0000009c | Inst = 0x00178793 (ALU-I )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x0000003c <- Data: 0x00000001
+-----------------------------------------------------------------
+Time: 680000 | PC = 0x0000009c | Inst = 0x00178793 (ALU-I )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000038
+-----------------------------------------------------------------
+Time: 690000 | PC = 0x000000a0 | Inst = 0xfef42423 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 700000 | PC = 0x000000a4 | Inst = 0xfe842703 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 710000 | PC = 0x000000a8 | Inst = 0xfd842783 (LOAD  )
+          -> [MEM] WRITE RAM | Addr: 0x00000038 <- Data: 0x00000002
+          -> [WB]  WRITE REG | x15 <- 0x00000002
+-----------------------------------------------------------------
+Time: 720000 | PC = 0x000000ac | Inst = 0xf8e7d8e3 (BRANCH)
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000038
+-----------------------------------------------------------------
+Time: 730000 | PC = 0x000000ac | Inst = 0xf8e7d8e3 (BRANCH)
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000028
+          -> [WB]  LOAD REG  | x14 <- 0x00000002 (Data RAM thô: 0x00000002)
+-----------------------------------------------------------------
+Time: 740000 | PC = 0x000000b0 | Inst = 0x01400793 (ALU-I )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x00000038
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000005 (Data RAM thô: 0x00000005)
+-----------------------------------------------------------------
+Time: 750000 | PC = 0x00000038 | Inst = 0xfcf42a23 (STORE )
+-----------------------------------------------------------------
+Time: 760000 | PC = 0x0000003c | Inst = 0xfec42783 (LOAD  )
+-----------------------------------------------------------------
+Time: 770000 | PC = 0x00000040 | Inst = 0xfef42223 (STORE )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x00000024 <- Data: 0x00000005
+-----------------------------------------------------------------
+Time: 780000 | PC = 0x00000040 | Inst = 0xfef42223 (STORE )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x0000003c
+-----------------------------------------------------------------
+Time: 790000 | PC = 0x00000044 | Inst = 0xfe842783 (LOAD  )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 800000 | PC = 0x00000048 | Inst = 0xfef42023 (STORE )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x00000034 <- Data: 0x00000001
+-----------------------------------------------------------------
+Time: 810000 | PC = 0x00000048 | Inst = 0xfef42023 (STORE )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000038
+-----------------------------------------------------------------
+Time: 820000 | PC = 0x0000004c | Inst = 0xfc042e23 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000002 (Data RAM thô: 0x00000002)
+-----------------------------------------------------------------
+Time: 830000 | PC = 0x00000050 | Inst = 0x0380006f (JAL   )
+          -> [MEM] WRITE RAM | Addr: 0x00000030 <- Data: 0x00000002
+-----------------------------------------------------------------
+Time: 840000 | PC = 0x00000054 | Inst = 0xfe042783 (LOAD  )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x00000084
+          -> [MEM] WRITE RAM | Addr: 0x0000002c <- Data: 0x00000000
+-----------------------------------------------------------------
+Time: 850000 | PC = 0x00000084 | Inst = 0x0017f793 (ALU-I )
+-----------------------------------------------------------------
+Time: 860000 | PC = 0x00000088 | Inst = 0xfe042783 (LOAD  )
+-----------------------------------------------------------------
+Time: 870000 | PC = 0x0000008c | Inst = 0xfcf044e3 (BRANCH)
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+-----------------------------------------------------------------
+Time: 880000 | PC = 0x0000008c | Inst = 0xfcf044e3 (BRANCH)
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000030
+          -> [WB]  WRITE REG | x15 <- 0x00000000
+-----------------------------------------------------------------
+Time: 890000 | PC = 0x00000090 | Inst = 0xfdc42783 (LOAD  )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x00000050
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  LOAD REG  | x15 <- 0x00000002 (Data RAM thô: 0x00000002)
+-----------------------------------------------------------------
+Time: 900000 | PC = 0x00000050 | Inst = 0xfef42623 (STORE )
+-----------------------------------------------------------------
+Time: 910000 | PC = 0x00000054 | Inst = 0xfe042783 (LOAD  )
+-----------------------------------------------------------------
+Time: 920000 | PC = 0x00000058 | Inst = 0x0017f793 (ALU-I )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] WRITE RAM | Addr: 0x0000003c <- Data: 0x00000002
+-----------------------------------------------------------------
+Time: 930000 | PC = 0x00000058 | Inst = 0x0017f793 (ALU-I )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000030
+-----------------------------------------------------------------
+Time: 940000 | PC = 0x0000005c | Inst = 0x00078a63 (BRANCH)
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000002 (Data RAM thô: 0x00000002)
+-----------------------------------------------------------------
+Time: 950000 | PC = 0x00000060 | Inst = 0xfdc42703 (LOAD  )
+          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!
+          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x0000006c
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 01, RS2_sel: 00
+-----------------------------------------------------------------
+Time: 960000 | PC = 0x0000006c | Inst = 0xfe442783 (LOAD  )
+          -> [WB]  WRITE REG | x15 <- 0x00000000
+-----------------------------------------------------------------
+Time: 970000 | PC = 0x00000070 | Inst = 0xfe442783 (LOAD  )
+-----------------------------------------------------------------
+Time: 980000 | PC = 0x00000074 | Inst = 0x00179793 (ALU-I )
+          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000034
+-----------------------------------------------------------------
+Time: 990000 | PC = 0x00000074 | Inst = 0x00179793 (ALU-I )
+          -> [MEM] READ RAM  | Đang yêu cầu đọc tại Addr: 0x00000034
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
+Time: 1000000 | PC = 0x00000078 | Inst = 0xfef42223 (STORE )
+          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  LOAD REG  | x15 <- 0x00000001 (Data RAM thô: 0x00000001)
+-----------------------------------------------------------------
