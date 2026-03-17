@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1773592944" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/tb_riscv_1.dcp">
+  <File Type="PA-TCL" Name="riscv.tcl"/>
+  <File Type="REPORTS-TCL" Name="riscv_reports.tcl"/>
+  <File Type="RDS-RDS" Name="riscv.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="riscv_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="riscv_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="riscv_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="riscv.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="riscv_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="riscv_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/utils/encoding.v">
+      <FileInfo>
+        <Attr Name="IsGlobalInclude" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/utils/encoding.v"/>
+        <Attr Name="ImportTime" Val="1770353759"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/rtl/alu.v"/>
+        <Attr Name="ImportTime" Val="1770399022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/bj_detect.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/bj_detect.v"/>
+        <Attr Name="ImportTime" Val="1771860854"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/control_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/control_unit.v"/>
+        <Attr Name="ImportTime" Val="1772025272"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cpu_pipeline.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/dmem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/rtl/dmem.v"/>
+        <Attr Name="ImportTime" Val="1772687109"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/ex_mem_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV-CNN-SoC/cpu_pipeline/pipeline_reg/ex_mem_reg.v"/>
+        <Attr Name="ImportTime" Val="1772720846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/unit_modules/unit_modules_rtl/forwarding_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV-CNN-SoC/cpu_pipeline/unit_modules/unit_modules_rtl/forwarding_unit.v"/>
+        <Attr Name="ImportTime" Val="1772720846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/hazard_detection_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/hazard_detection_unit.v"/>
+        <Attr Name="ImportTime" Val="1772634829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/id_ex_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV-CNN-SoC/cpu_pipeline/pipeline_reg/id_ex_reg.v"/>
+        <Attr Name="ImportTime" Val="1772720846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/if_id_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV-CNN-SoC/cpu_pipeline/pipeline_reg/if_id_reg.v"/>
+        <Attr Name="ImportTime" Val="1772720846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/imem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/rtl/imem.v"/>
+        <Attr Name="ImportTime" Val="1772635802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/imme_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/rtl/imme_gen.v"/>
+        <Attr Name="ImportTime" Val="1771827001"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/load_alignment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/load_alignment.v"/>
+        <Attr Name="ImportTime" Val="1772720539"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/mem_wb_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV-CNN-SoC/cpu_pipeline/pipeline_reg/mem_wb_reg.v"/>
+        <Attr Name="ImportTime" Val="1772720846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/mux_4x1_32bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/mux_4x1_32bit.v"/>
+        <Attr Name="ImportTime" Val="1772015083"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/pc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/rtl/pc.v"/>
+        <Attr Name="ImportTime" Val="1772025148"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/reg_file.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/rtl/reg_file.v"/>
+        <Attr Name="ImportTime" Val="1770215194"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/store_alignment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/store_alignment.v"/>
+        <Attr Name="ImportTime" Val="1772720544"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/riscv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_riscv_1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_riscv.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/mux_2x1_32bit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/mux_2x1_32bit.v"/>
+        <Attr Name="ImportTime" Val="1772015077"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/mul.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/imports/rtl/mul.v"/>
+        <Attr Name="ImportTime" Val="1770425644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/machine_code.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISCV/RISCV.srcs/sources_1/new/machine_code.mem"/>
+        <Attr Name="ImportTime" Val="1772031722"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="riscv"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/tb_riscv_1.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

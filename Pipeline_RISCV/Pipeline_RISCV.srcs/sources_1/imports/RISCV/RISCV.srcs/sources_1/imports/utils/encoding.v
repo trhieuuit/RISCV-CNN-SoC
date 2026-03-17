@@ -8,7 +8,8 @@
 `define STORE_OPCODE 7'b0100011
 `define I_TYPE_OPCODE 7'b0010011
 `define R_TYPE_OPCODE 7'b0110011
-
+`define SYSTEM_OPCODE 7'b1110011
+`define FENCE_OPCODE 7'b0001111
 // OP1SEL
 `define DATA1 1'b0
 `define PC 1'b1

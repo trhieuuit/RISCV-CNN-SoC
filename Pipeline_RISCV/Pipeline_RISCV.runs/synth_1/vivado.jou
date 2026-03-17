@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Mar 15 23:42:26 2026
+# Process ID         : 6500
+# Current directory  : D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1
+# Command line       : vivado.exe -log riscv.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv.tcl
+# Log file           : D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1/riscv.vds
+# Journal file       : D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1\vivado.jou
+# Running On         : Trong_Hieu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 6600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16361 MB
+# Swap memory        : 16106 MB
+# Total Virtual      : 32467 MB
+# Available Virtual  : 6402 MB
+#-----------------------------------------------------------
+source riscv.tcl -notrace

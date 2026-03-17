@@ -54,7 +54,7 @@ module tb_riscv();
             default:    inst_name = "UNKNWN";
         endcase
         // Bắt lệnh NOP (0x00000013 hoặc 0x13)
-        if (uut.rv_core.instruction == 32'h00000013) inst_name = "NOP   ";
+        if (uut.rv_core.id_instr == 32'h00000013) inst_name = "NOP   ";
     end
 
     // ===========================================================================
@@ -70,11 +70,11 @@ module tb_riscv();
         $display("==================================================");
 
         // Giữ Reset 4 chu kỳ
-        #40;
+        #42;
         reset_ni = 1; 
         
         // Cho chạy tự do 3000ns để kịp test code C
-        #3000; 
+        #10000; 
 
         // IN TOÀN BỘ THANH GHI
         $display("\n==================================================");
@@ -97,7 +97,7 @@ module tb_riscv();
             
             // 1. Tầng IF: Theo dõi PC và Lệnh (Kèm tên lệnh)
             $display("Time: %0t | PC = 0x%h | Inst = 0x%h (%s)", 
-                     $time, uut.rv_core.if_pc, uut.rv_core.instruction, inst_name);
+                     $time, uut.rv_core.id_pc, uut.rv_core.id_instr, inst_name);
             
             // 2. Tầng Pipeline Control: Theo dõi Hazard (Sửa tên wire cho khớp code của bạn)
             if (uut.rv_core.stall_pc_if_id) 

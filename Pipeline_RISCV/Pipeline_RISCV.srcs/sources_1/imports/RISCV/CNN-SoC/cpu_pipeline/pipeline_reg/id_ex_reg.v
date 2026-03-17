@@ -40,6 +40,7 @@ module id_ex_reg(
     input wire [1:0]  d2_bjsel_i,
     input wire [4:0]  op_alu_i,
     input wire [2:0]  op_bl_i,
+    input wire        is_jalr_i,
     input wire        d_dmemsel_i,
     input wire        we_dmem_i,
     input wire [3:0]  rw_dmem_i,
@@ -63,7 +64,8 @@ module id_ex_reg(
 
     output reg  [4:0]  op_alu_o,
     output reg  [2:0]  op_bl_o,
-
+    
+    output reg          is_jalr_o,
     output reg         d_dmemsel_o,
     output reg         we_dmem_o,
     output reg  [3:0]  rw_dmem_o,
@@ -94,6 +96,7 @@ begin
         op_alu_o      <= 5'b0;
         op_bl_o       <= 3'b010;
 
+        is_jalr_o     <= 1'b0;
         d_dmemsel_o   <= 1'b0;
         we_dmem_o     <= 1'b0;
         rw_dmem_o     <= 4'b0;
@@ -119,6 +122,8 @@ begin
         op_alu_o      <= op_alu_i;
         op_bl_o       <= op_bl_i;
 
+
+        is_jalr_o     <= is_jalr_i;
         d_dmemsel_o   <= d_dmemsel_i;
         we_dmem_o     <= we_dmem_i;
         rw_dmem_o     <= rw_dmem_i;

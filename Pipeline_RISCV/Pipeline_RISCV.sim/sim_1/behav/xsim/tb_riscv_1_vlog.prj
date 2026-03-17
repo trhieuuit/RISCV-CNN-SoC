@@ -19,7 +19,7 @@ verilog xil_defaultlib "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RIS
 "../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/reg_file.v" \
 "../../../../Pipeline_RISCV.srcs/sources_1/new/riscv.v" \
 "../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/store_alignment.v" \
-"../../../../Pipeline_RISCV.srcs/sources_1/new/tb_riscv.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/new/tb_riscv_1.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

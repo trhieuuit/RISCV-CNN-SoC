@@ -28,13 +28,15 @@ module control_unit(
     output reg        op1sel_out, 
     output reg        op2sel_out, 
     output reg        reg_write_en_out,
+    output reg        is_jalr_o,
     output reg  [1:0] wb_sel_out,
     output reg  [4:0] aluop_out,
     output reg  [2:0] branch_jump_out,
     output reg  [2:0] imm_sel_out,
     output reg  [3:0] read_write_out,
     output reg        we_dmem_out,   // Cờ Ghi RAM
-    output reg        d_dmemsel_out  // Cờ Đọc RAM
+    output reg        d_dmemsel_out,  // Cờ Đọc RAM
+    output reg ecall_out
 );
     
     always @(*) begin
@@ -47,9 +49,10 @@ module control_unit(
         branch_jump_out  = `NO;              // Không nhảy (Mã 010)
         imm_sel_out      = `U_TYPE;          // Mặc định
         read_write_out   = `NO_RW;           // Không đụng vào RAM
+        is_jalr_o        = 1'b0;
         we_dmem_out      = 1'b0; 
         d_dmemsel_out    = 1'b0;
-      
+        ecall_out        = 1'b0;
  //  GIẢI MÃ LỆNH
 
         case(opcode)
@@ -143,13 +146,14 @@ module control_unit(
                 imm_sel_out      = `I_SIGNED_TYPE;
                 aluop_out        = `ADD; 
                 branch_jump_out  = `J;
+                is_jalr_o        = 1'b1;
             end
 
             `LUI_OPCODE: begin
                 reg_write_en_out = `REG_WRITE_EN_1;
                 op1sel_out       = `DATA1; // Bỏ qua
                 op2sel_out       = `IMM; 
-                wb_sel_out       = `IMM_WB; // Bê nguyên cục hằng số ném vào Register
+                wb_sel_out       = 2'b00; // Bê nguyên cục hằng số ném vào Register
                 imm_sel_out      = `U_TYPE;
             end
 
@@ -160,6 +164,22 @@ module control_unit(
                 wb_sel_out       = `ALU; 
                 imm_sel_out      = `U_TYPE;
                 aluop_out        = `ADD; 
+            end
+            
+
+
+            `FENCE_OPCODE: begin
+                reg_write_en_out = 1'b0; 
+                we_dmem_out      = 1'b0; 
+                branch_jump_out  = `NO; 
+         
+            end
+            
+            `SYSTEM_OPCODE: begin
+                ecall_out = 1'b1; 
+                reg_write_en_out = 1'b0;
+                we_dmem_out      = 1'b0;
+                branch_jump_out  = `NO;
             end
 
             default: begin

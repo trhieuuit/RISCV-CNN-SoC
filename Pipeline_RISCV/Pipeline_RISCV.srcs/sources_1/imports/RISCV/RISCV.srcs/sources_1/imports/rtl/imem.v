@@ -36,7 +36,8 @@ module imem#(
 
     initial begin
        
-        $readmemb("D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/new/machine_code.mem", rom);
+       // $readmemb("D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/new/machine_code.mem", rom);
+       $readmemh("D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/new/machine_code.mem", rom);
     end
     
    
