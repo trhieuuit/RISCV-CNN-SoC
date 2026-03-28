@@ -20,11 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+`timescale 1ns / 1ps
+
 module riscv(
-    input wire clk,
-    input wire reset_ni
-    );
+    input  wire clk,
+    input  wire reset_ni,
     
+    // Tín hiệu báo xong cho ARM (Nối trực tiếp từ cpu_halted của ecall)
+    output wire rv_done_o 
+);
+
     // ===========================================================================
     // DÂY KẾT NỐI GIỮA CPU VÀ BỘ NHỚ LỆNH (IMEM)
     // ===========================================================================
@@ -58,13 +63,16 @@ module riscv(
         .data_wdata_o    (data_wdata),
         .data_en_o       (data_en),
         .data_we_o       (data_we),
-        .data_rdata_i    (data_rdata)
+        .data_rdata_i    (data_rdata),
+        
+        // Bắn tín hiệu ecall thẳng ra ngoài wrapper cho ARM
+        .rv_done_o      (rv_done_o)
     );
 
     // ===========================================================================
     // 2. BỘ NHỚ LỆNH (INSTRUCTION MEMORY - BRAM)
     // ===========================================================================
-    // Dung lượng: 1000 lệnh (Tùy chỉnh tham số NUM_INS nếu file .mem của bạn lớn hơn)
+    // Dung lượng: 1000 lệnh
     imem #(
         .DATA_WIDTH(32),
         .NUM_INS(1000)
@@ -93,4 +101,5 @@ module riscv(
         
         .mem_o           (data_rdata)
     );
+
 endmodule

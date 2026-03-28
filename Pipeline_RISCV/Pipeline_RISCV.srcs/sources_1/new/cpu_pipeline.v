@@ -26,8 +26,10 @@ module cpu_pipeline(
     output wire [31:0] data_wdata_o,   
     output wire        data_en_o,    // Chân kích hoạt BRAM 
     output wire [3:0]  data_we_o,    // Chân cho phép Ghi 
+    input  wire [31:0] data_rdata_i,  
     
-    input  wire [31:0] data_rdata_i    
+ 
+    output wire        rv_done_o
 );
 
     // ===========================================================================

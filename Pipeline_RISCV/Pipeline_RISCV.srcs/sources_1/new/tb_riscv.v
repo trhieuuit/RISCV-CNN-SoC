@@ -1,33 +1,18 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Hieu
-// 
-// Create Date: 03/09/2026
-// Design Name: RISC-V Testbench (Advanced Debug)
-// Module Name: tb_riscv
-// Target Devices: Vivado Simulator
-// Description: Testbench có tích hợp Monitor theo dõi PC và Register File
-//////////////////////////////////////////////////////////////////////////////////
-
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Engineer: Hieu
-// Design Name: RISC-V Testbench (Advanced Debug)
-// Description: Tích hợp Monitor theo dõi PC, RegFile, Hazard, Branch và Disassembler
-//////////////////////////////////////////////////////////////////////////////////
 
 module tb_riscv();
 
     reg clk;
     reg reset_ni;
+    wire rv_done_o;
 
     // ===========================================================================
     // GỌI TOP MODULE 
     // ===========================================================================
     riscv uut (
         .clk(clk),
-        .reset_ni(reset_ni)
+        .reset_ni(reset_ni),
+        .rv_done_o(rv_done_o)
     );
 
     // BỘ TẠO XUNG CLOCK (100MHz)
@@ -37,7 +22,7 @@ module tb_riscv();
     // BỘ GIẢI MÃ LỆNH ĐƠN GIẢN (DISASSEMBLER CHO LOG)
     // ===========================================================================
     wire [6:0] opcode = uut.rv_core.instruction[6:0];
-    reg [47:0] inst_name; // Chứa tối đa 6 ký tự ASCII (8 bit * 6)
+    reg [47:0] inst_name; 
 
     always @(*) begin
         case(opcode)
@@ -50,10 +35,10 @@ module tb_riscv();
             7'b0100011: inst_name = "STORE ";
             7'b0010011: inst_name = "ALU-I ";
             7'b0110011: inst_name = "ALU-R ";
-            7'b0000000: inst_name = "BUBBLE"; // Bong bóng do Flush/Stall
+            7'b1110011: inst_name = "ECALL "; 
+            7'b0000000: inst_name = "BUBBLE"; 
             default:    inst_name = "UNKNWN";
         endcase
-        // Bắt lệnh NOP (0x00000013 hoặc 0x13)
         if (uut.rv_core.id_instr == 32'h00000013) inst_name = "NOP   ";
     end
 
@@ -61,20 +46,44 @@ module tb_riscv();
     // KỊCH BẢN MÔ PHỎNG VÀ IN KẾT QUẢ CHUNG CUỘC
     // ===========================================================================
     integer i;
+    integer timeout_counter; // Bộ đếm thời gian timeout
+    
     initial begin
         clk = 0;
         reset_ni = 0; 
+        timeout_counter = 0;
         
         $display("==================================================");
         $display("      BẮT ĐẦU MÔ PHỎNG SoC RISC-V (PRO MODE)      ");
         $display("==================================================");
 
+        // NẠP LỆNH TRỰC TIẾP VÀO IMEM
+        uut.instruction_memory.rom[0] = 32'h00500093;  // addi x1, x0, 5 
+        uut.instruction_memory.rom[1] = 32'h00a00113;  // addi x2, x0, 10
+        uut.instruction_memory.rom[2] = 32'h002081b3;  // add  x3, x1, x2
+        uut.instruction_memory.rom[3] = 32'h00000073;  // ecall          
+        
+        uut.instruction_memory.rom[4] = 32'h00000013;  // NOP
+        uut.instruction_memory.rom[5] = 32'h00000013;  // NOP
+
         // Giữ Reset 4 chu kỳ
         #42;
         reset_ni = 1; 
         
-        // Cho chạy tự do 3000ns để kịp test code C
-        #10000; 
+        // CHỜ TÍN HIỆU DONE HOẶC TIMEOUT (Sử dụng lệnh cơ bản)
+        // Lặp lại việc chờ 5ns cho đến khi cpu_halted = 1 hoặc đạt 2000 lần (10000ns)
+        while ((uut.rv_core.cpu_halted == 1'b0) && (timeout_counter < 2000)) begin
+            #5;
+            timeout_counter = timeout_counter + 1;
+        end
+
+        // Kiểm tra xem vòng lặp kết thúc vì lý do gì
+        if (uut.rv_core.cpu_halted == 1'b1) begin
+            #20; // Chờ thêm một chút để in nốt log cuối
+            $display("\n[SUCCESS] Tín hiệu DONE (ECALL) đã được kích hoạt thành công!");
+        end else begin
+            $display("\n[TIMEOUT] Lỗi: Không thấy ECALL sau 10000ns!");
+        end
 
         // IN TOÀN BỘ THANH GHI
         $display("\n==================================================");
@@ -95,24 +104,24 @@ module tb_riscv();
     always @(negedge clk) begin
         if (reset_ni) begin 
             
-            // 1. Tầng IF: Theo dõi PC và Lệnh (Kèm tên lệnh)
             $display("Time: %0t | PC = 0x%h | Inst = 0x%h (%s)", 
                      $time, uut.rv_core.id_pc, uut.rv_core.id_instr, inst_name);
             
-            // 2. Tầng Pipeline Control: Theo dõi Hazard (Sửa tên wire cho khớp code của bạn)
+            if (uut.rv_core.cpu_halted) begin
+                $display("          -> [SYSTEM] CPU HALTED: Đã bắt được ECALL, CPU đang đóng băng!");
+            end
+
             if (uut.rv_core.stall_pc_if_id) 
                 $display("          -> [HAZARD] STALL: Phanh đường ống chờ dữ liệu Load!");
             if (uut.rv_core.flush_if_id) 
                 $display("          -> [HAZARD] FLUSH: Dọn rác lệnh do nhảy (Branch/Jump)!");
 
-            // 3. Tầng EX: Theo dõi Nhảy và Forwarding
             if (uut.rv_core.ex_branch_taken)
                 $display("          -> [EX] JUMP/BRANCH TAKEN | PC chuyển hướng tới 0x%h", uut.rv_core.ex_branch_target);
                 
             if (uut.rv_core.fw_sel_rs1 != 2'b00 || uut.rv_core.fw_sel_rs2 != 2'b00)
                 $display("          -> [EX] FORWARDING KÍCH HOẠT | RS1_sel: %b, RS2_sel: %b", uut.rv_core.fw_sel_rs1, uut.rv_core.fw_sel_rs2);
 
-            // 4. Tầng MEM: Theo dõi Ghi/Đọc BRAM
             if (uut.rv_core.mem_we_dmem_o) begin
                 $display("          -> [MEM] WRITE RAM | Addr: 0x%h <- Data: 0x%h", 
                          uut.rv_core.mem_alu_result, uut.rv_core.mem_write_data);
@@ -123,12 +132,11 @@ module tb_riscv();
                          uut.rv_core.mem_alu_result);
             end
             
-            // 5. Tầng WB: Theo dõi Ghi Register File
             if (uut.rv_core.wb_reg_write_en && (uut.rv_core.wb_rd != 5'd0)) begin
-                if (uut.rv_core.wb_d_wbsel == 2'b01) begin // Từ RAM về
+                if (uut.rv_core.wb_d_wbsel == 2'b01) begin 
                     $display("          -> [WB]  LOAD REG  | x%0d <- 0x%h (Data RAM thô: 0x%h)", 
                              uut.rv_core.wb_rd, uut.rv_core.wb_wdata, uut.rv_core.data_rdata_i);
-                end else begin // Từ ALU về
+                end else begin 
                     $display("          -> [WB]  WRITE REG | x%0d <- 0x%h", 
                              uut.rv_core.wb_rd, uut.rv_core.wb_wdata);
                 end

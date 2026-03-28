@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/2025.1/Vitis/bin;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64:C:/Xilinx/2025.1/Vivado/bin
+  PATH=D:/Vivado/2025.1/Vitis/bin;D:/Vivado/2025.1/Vivado/ids_lite/ISE/bin/nt64;D:/Vivado/2025.1/Vivado/ids_lite/ISE/lib/nt64:D:/Vivado/2025.1/Vivado/bin
 else
-  PATH=C:/Xilinx/2025.1/Vitis/bin;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64:C:/Xilinx/2025.1/Vivado/bin:$PATH
+  PATH=D:/Vivado/2025.1/Vitis/bin;D:/Vivado/2025.1/Vivado/ids_lite/ISE/bin/nt64;D:/Vivado/2025.1/Vivado/ids_lite/ISE/lib/nt64:D:/Vivado/2025.1/Vivado/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1'
+HD_PWD='C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log riscv.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv.tcl
+EAStep vivado -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl

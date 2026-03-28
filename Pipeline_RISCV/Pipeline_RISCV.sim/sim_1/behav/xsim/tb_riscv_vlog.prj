@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/utils/encoding.v" --include "D:/Vivado/2025.1/Vivado/data/rsb/busdef" --include "../../../../Pipeline_RISCV.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../Pipeline_RISCV.gen/sources_1/bd/design_1/ipshared/7711/hdl" --include "../../../../Pipeline_RISCV.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../Pipeline_RISCV.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/utils" --include "D:/Vivado/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/alu.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/bj_detect.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/control_unit.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/new/cpu_pipeline.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/dmem.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/ex_mem_reg.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/unit_modules/unit_modules_rtl/forwarding_unit.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/hazard_detection_unit.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/id_ex_reg.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/if_id_reg.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/imem.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/imme_gen.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/load_alignment.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/mem_wb_reg.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/mux_4x1_32bit.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/pc.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/reg_file.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/new/riscv.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/store_alignment.v" \
+"../../../../Pipeline_RISCV.srcs/sources_1/new/tb_riscv.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
