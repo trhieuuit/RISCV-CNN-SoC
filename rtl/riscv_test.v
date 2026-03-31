@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 
+// Create Date: 03/28/2026 09:29:00 AM
 // Design Name: 
-// Module Name: DMEM
+// Module Name: riscv_test
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,17 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module pc(
-    input  wire        clk_i,
-    input  wire        rst_ni,
-    input  wire        stall_i,   
-    input  wire [31:0] pc_next, 
-    output reg  [31:0] pc_o
-);
-    always @(posedge clk_i or negedge rst_ni ) begin
-        if (!rst_ni) 
-            pc_o <= 32'h0;
-        else if (!stall_i)        
-            pc_o <= pc_next;
-    end
+
+module riscv_test(
+
+    );
 endmodule

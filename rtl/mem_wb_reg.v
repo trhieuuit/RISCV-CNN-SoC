@@ -37,6 +37,8 @@ module mem_wb_reg(
     input  wire [1:0]  d_wbsel_i,
     input  wire        we_regfile_i,
 
+    input  wire [3:0]  rw_dmem_i,
+    
     // ================= OUTPUTS =================
 
     output reg  [31:0] pc_o,
@@ -46,7 +48,10 @@ module mem_wb_reg(
     output reg  [31:0] dmem_o,
 
     output reg  [1:0]  d_wbsel_o,
-    output reg         we_regfile_o
+    output reg         we_regfile_o,
+    
+    output reg  [3:0]  rw_dmem_o
+    
 );
 
 always @(posedge clk_i)
@@ -61,6 +66,7 @@ begin
 
         d_wbsel_o      <= 2'b0;
         we_regfile_o   <= 1'b0;
+        rw_dmem_o <= 4'b0;
     end else begin
         // NORMAL PIPELINE TRANSFER
         pc_o           <= pc_i;
@@ -71,6 +77,7 @@ begin
 
         d_wbsel_o      <= d_wbsel_i;
         we_regfile_o   <= we_regfile_i;
+        rw_dmem_o <= rw_dmem_i;
     end
 end
 

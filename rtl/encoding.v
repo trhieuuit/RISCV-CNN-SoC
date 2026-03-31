@@ -8,7 +8,8 @@
 `define STORE_OPCODE 7'b0100011
 `define I_TYPE_OPCODE 7'b0010011
 `define R_TYPE_OPCODE 7'b0110011
-
+`define SYSTEM_OPCODE 7'b1110011
+`define FENCE_OPCODE 7'b0001111
 // OP1SEL
 `define DATA1 1'b0
 `define PC 1'b1
@@ -76,3 +77,14 @@
 `define SB 4'b1011
 `define SH 4'b1110
 `define SW 4'b1111
+
+
+// Forwarding Unit RS1 MUX
+ `define RS1_ID_EX 2'b00  //default
+ `define RS1_EX_MEM 2'b01
+ `define RS1_MEM_WB 2'b10
+ 
+ // Forwarding Unit RS1 MUX
+ `define RS2_ID_EX 2'b00  //default
+ `define RS2_EX_MEM 2'b01
+ `define RS2_MEM_WB 2'b10

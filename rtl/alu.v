@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`include "encoding.v"
+//`include "encoding.v"
 module alu(
     input [31:0] operand_a_i,
      input [31:0] operand_b_i,

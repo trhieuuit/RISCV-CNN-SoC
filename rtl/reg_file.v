@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module reg_file #(
+ module reg_file #(
 	parameter DATA_WIDTH = 32,
 	parameter NUM_REGS	= 32,
 	parameter ADDR_WIDTH = $clog2(NUM_REGS)
@@ -40,15 +40,22 @@ module reg_file #(
 		
 		reg [DATA_WIDTH-1:0] registers [0:NUM_REGS-1];
 		integer i;
-		
-		//Output 
-		// Refined Output Logic (Internal Forwarding / Transparency)
-        assign rdata1_o = (raddr1_i == 5'b0) ? 32'b0 : 
-                          ((we_i && (waddr_i == raddr1_i)) ? wdata_i : registers[raddr1_i]);
-        
-        assign rdata2_o = (raddr2_i == 5'b0) ? 32'b0 : 
-                          ((we_i && (waddr_i == raddr2_i)) ? wdata_i : registers[raddr2_i]);
 	
+    initial begin
+      for (i = 0; i < NUM_REGS; i = i + 1) registers[i] = 32'b0;
+    end
+
+		//Output 
+		//assign rdata1_o = (raddr1_i == 5'b0) ? 32'b0 : registers[raddr1_i];
+		//assign rdata2_o = (raddr2_i == 5'b0) ? 32'b0 : registers[raddr2_i];
+	   
+	   assign rdata1_o = (raddr1_i == 5'b0) ? 32'b0 : 
+                  (we_i && (waddr_i == raddr1_i)) ? wdata_i : 
+                  registers[raddr1_i];
+
+       assign rdata2_o = (raddr2_i == 5'b0) ? 32'b0 : 
+                  (we_i && (waddr_i == raddr2_i)) ? wdata_i : 
+                  registers[raddr2_i];
 		//Input
 		always @(posedge clk_i) begin
 			if(!rst_ni) begin 

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 
+// Create Date: 02/23/2026 10:07:31 PM
 // Design Name: 
-// Module Name: DMEM
+// Module Name: mux_2x1_32bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,17 +19,19 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module pc(
-    input  wire        clk_i,
-    input  wire        rst_ni,
-    input  wire        stall_i,   
-    input  wire [31:0] pc_next, 
-    output reg  [31:0] pc_o
-);
-    always @(posedge clk_i or negedge rst_ni ) begin
-        if (!rst_ni) 
-            pc_o <= 32'h0;
-        else if (!stall_i)        
-            pc_o <= pc_next;
+
+module mux_2x1_32bit(out, in0, in1, sel);
+
+    input [31:0] in0, in1;
+    input sel;
+    output reg [31:0] out;
+
+    
+    always @ (*) begin
+        case (sel)
+            1'b1: out = in1;
+            default: out = in0;
+        endcase
     end
+
 endmodule

@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`include "encoding.v"
+//`include "encoding.v"
 module imme_gen(
 	input [24:0] in,  // instruction[31:7]
 	input [2:0] imm_sel,
@@ -54,6 +54,6 @@ module imme_gen(
             `I_UNSIGNED_TYPE: out = I_UNSIGN_OUT;           
             default: out = 0 ;  
                                 
-        endcase
+        endcase 
     end
 endmodule
