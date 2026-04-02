@@ -1,6 +1,6 @@
-// Created by: Hieu
+// Created by: PHAM HOAI LUAN
 // Created on: 2026-03-31
-// Description: FPGA Driver for Custom RV32I Core using Linux UIO Subsystem
+// Description: This file includes the FPGA driver functions to interact with the FPGA.
 
 #include <sys/types.h>
 #include <sys/mman.h>
@@ -36,18 +36,18 @@ volatile struct {
     U32* pio_32_mmap;    // Mapped virtual address to access registers
 } RV32I_info;
 
-// Helper: Bỏ qua các file ẩn (bắt đầu bằng '.')
+// Helper: Filter out hidden files (starting with '.')
 static int filter(const struct dirent* dir) {
     return dir->d_name[0] == '.' ? 0 : 1;
 }
 
-// Helper: Xóa ký tự xuống dòng
+// Helper: Remove trailing newline from a string
 static void trim(char* d_name) {
     char* p = strchr(d_name, '\n');
     if (p != NULL) *p = '\0';
 }
 
-// Helper: Đọc file 'name' trong sysfs để xem có đúng thiết bị RV32I không
+// Check if the given UIO device matches the target name
 static int is_target_dev(char* d_name, const char* target) {
     char path[128], name[64];
     FILE* fp;
@@ -72,36 +72,32 @@ int fpga_open() {
     char path[128];
     int fd_reg = -1;
 
-    // Quét toàn bộ các thiết bị UIO đang có trên Linux
     num_dirs = scandir("/sys/class/uio", &namelist, filter, alphasort);
     if (num_dirs == -1) {
-        perror(" LỖI: Không thể đọc thư mục /sys/class/uio.");
+        perror("error");
         return -1;
     }
 
     for (int dir = 0; dir < num_dirs; ++dir) {
         trim(namelist[dir]->d_name);
 
-        // Nếu đúng tên UIO_TARGET_NAME
         if (is_target_dev(namelist[dir]->d_name, UIO_TARGET_NAME)) {
             snprintf(path, sizeof(path), "/dev/%s", namelist[dir]->d_name);
             free(namelist[dir]);
 
             fd_reg = open(path, O_RDWR | O_SYNC);
             if (fd_reg == -1) {
-                perror("LỖI: Mở thiết bị UIO thất bại");
+                perror("open failed");
                 free(namelist);
                 return -1;
             }
 
-            printf("[Driver] Đã tìm thấy thiết bị: %s (%s", path, UIO_TARGET_NAME);
-            printf("[Driver] Đang ánh xạ bộ nhớ (mmap)...\n");
-
+            printf("Opened device: %s -- %s", path, UIO_TARGET_NAME);
 
             RV32I_info.pio_32_mmap = (U32*)mmap(NULL, REG_MMAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd_reg, 0);
 
             if (RV32I_info.pio_32_mmap == MAP_FAILED) {
-                perror("LỖI: mmap UIO thất bại");
+                perror("mmap failed");
                 close(fd_reg);
                 free(namelist);
                 return -1;
@@ -116,7 +112,7 @@ int fpga_open() {
     free(namelist);
 
     if (fd_reg == -1) {
-        fprintf(stderr, "LỖI: Không tìm thấy thiết bị có tên '%s' trong hệ thống UIO!\n", UIO_TARGET_NAME);
+        fprintf(stderr, "error", UIO_TARGET_NAME);
         return -1;
     }
 
