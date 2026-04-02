@@ -1,29 +1,14 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/04/2026 09:00:11 PM
-// Design Name: 
+// Engineer: Hieu
+// Create Date: 02/04/2026
 // Module Name: reg_file_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: Self-checking testbench for RISC-V Register File
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module reg_file_tb();
-	
 
-    // --- 1. KHAI BÁO TÍN HIỆU ---
+    // --- 1. SIGNAL DECLARATIONS ---
     parameter DATA_WIDTH = 32;
     parameter NUM_REGS   = 32;
     parameter ADDR_WIDTH = 5;
@@ -35,10 +20,10 @@ module reg_file_tb();
     reg [DATA_WIDTH-1:0] wdata_i;
     wire [DATA_WIDTH-1:0] rdata1_o, rdata2_o;
 
-    // Biến đếm số lỗi
+    // Error counter
     integer error_count = 0;
 
-    // --- 2. INSTANTIATE DUT ---
+    // --- 2. DUT INSTANTIATION ---
     reg_file #(
         .DATA_WIDTH(DATA_WIDTH), 
         .NUM_REGS(NUM_REGS)
@@ -54,30 +39,30 @@ module reg_file_tb();
         .rdata2_o(rdata2_o)
     );
 
-    // --- 3. TẠO CLOCK (100MHz) ---
+    // --- 3. CLOCK GENERATION (100MHz) ---
     always #5 clk_i = ~clk_i;
 
-    // --- 4. CÁC TASKS (HÀM HỖ TRỢ) ---
+    // --- 4. HELPER TASKS ---
     
-    // Task 1: Thực hiện thao tác Ghi (Write)
+    // Task 1: Perform Write operation
     task write_reg(input [4:0] addr, input [31:0] data);
         begin
-            @ (posedge clk_i); // Đợi cạnh lên clock
+            @(posedge clk_i); // Wait for rising edge
             we_i = 1;
             waddr_i = addr;
             wdata_i = data;
-            @ (posedge clk_i); // Đợi ghi xong
+            @(posedge clk_i); // Wait for write completion
             we_i = 0;
-            waddr_i = 0; // Xóa bus cho sạch
+            waddr_i = 0;      // Clear buses
             wdata_i = 0;
         end
     endtask
 
-    // Task 2: Tự động kiểm tra (Check)
+    // Task 2: Automatic Verification (Check)
     task check_reg(input [4:0] addr, input [31:0] expected_val);
         begin
             raddr1_i = addr;
-            #1; // Delay nhỏ để mạch tổ hợp ổn định
+            #1; // Small delay for combinational logic stabilization
             
             if (rdata1_o !== expected_val) begin
                 $display("[FAIL] Time %0t: Addr x%0d | Expected: %h | Actual: %h", 
@@ -89,9 +74,9 @@ module reg_file_tb();
         end
     endtask
 
-    // --- 5. CHƯƠNG TRÌNH CHÍNH ---
+    // --- 5. MAIN STIMULUS ---
     initial begin
-        // Khởi tạo
+        // Initialization
         clk_i = 0;
         rst_ni = 1;
         we_i = 0;
@@ -103,36 +88,36 @@ module reg_file_tb();
         $display("---------------------------------------");
 
         // TEST 1: RESET CHECK
-        // Reset mạch
+        // Apply Reset
         rst_ni = 0; #10;
         rst_ni = 1; #10;
         
-        // Kiểm tra vài thanh ghi ngẫu nhiên xem có về 0 hết không
+        // Verify random registers are cleared to zero
         check_reg(1, 32'h0);
         check_reg(31, 32'h0);
 
         // TEST 2: SINGLE WRITE & READ
-        // Ghi vào x1 và x2
+        // Write to x1 and x2
         write_reg(5'd1, 32'hDEADBEEF);
         write_reg(5'd2, 32'hCAFEBABE);
         
-        // Kiểm tra lại
+        // Verify values
         check_reg(1, 32'hDEADBEEF);
         check_reg(2, 32'hCAFEBABE);
 
         // TEST 3: x0 HARDWIRED ZERO PROTECTION
-        // Cố tình ghi vào x0
+        // Attempt to write to x0
         write_reg(5'd0, 32'hFFFFFFFF);
         
-        // Kiểm tra xem x0 có vẫn là 0 không
+        // Verify x0 remains zero
         check_reg(0, 32'h00000000);
 
         // TEST 4: OVERWRITE CHECK
-        // Ghi đè giá trị mới vào x1
+        // Overwrite x1 with new value
         write_reg(5'd1, 32'h12345678);
         check_reg(1, 32'h12345678);
 
-        // --- TỔNG KẾT ---
+        // --- SUMMARY ---
         $display("---------------------------------------");
         if (error_count == 0) begin
             $display("RESULT: SUCCESS! All tests passed.");
@@ -144,6 +129,4 @@ module reg_file_tb();
         $finish;
     end
 
-
 endmodule
-
