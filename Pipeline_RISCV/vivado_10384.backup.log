@@ -1,0 +1,1120 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Apr  4 13:05:59 2026
+# Process ID         : 10384
+# Current directory  : C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21352 C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.xpr
+# Log file           : C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/vivado.log
+# Journal file       : C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV\vivado.jou
+# Running On         : DESKTOP-0UL7VKJ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16474 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 26138 MB
+# Available Virtual  : 10613 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.7\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.0\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.1\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.4\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.5\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc709\1.8\board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/nguye/Desktop/New folder (2)/RISCV-CNN-SoC/Pipeline_RISCV' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.7\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.0\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.1\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.4\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.5\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc709\1.8\board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-151] The current board 'xilinx.com::kv260_som:1.4' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2025.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 1805.207 ; gain = 288.617
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes C:/Users/nguye/Desktop/RISCV-CNN-SoC/utils/data.mem
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivado/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2025.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_3.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_21 -L smartconnect_v1_0 -L zynq_ultra_ps_e_vip_v1_0_21 -L xilinx_vip -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/encoding.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bj_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imme_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4x1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.if_id_reg
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.reg_file_default
+Compiling module xil_defaultlib.imme_gen
+Compiling module xil_defaultlib.hazard_detection_unit
+Compiling module xil_defaultlib.id_ex_reg
+Compiling module xil_defaultlib.forwarding_unit
+Compiling module xil_defaultlib.mux_4x1_32bit
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.bj_detect
+Compiling module xil_defaultlib.ex_mem_reg
+Compiling module xil_defaultlib.store_alignment
+Compiling module xil_defaultlib.mem_wb_reg
+Compiling module xil_defaultlib.load_alignment
+Compiling module xil_defaultlib.cpu_pipeline
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -protoinst "protoinst_files/bd_ae83.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_ae83.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_ae83.protoinst for the following reason(s):
+There are no instances of module "bd_ae83" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+==================================================
+      STARTING PIPELINE CPU SIMULATION            
+==================================================
+Time: 50000 | PC = 0x00000000 | Inst = 0x00000013 (NOP   )
+-----------------------------------------------------------------
+Time: 60000 | PC = 0x00000000 | Inst = 0x00500093 (ALU-I )
+-----------------------------------------------------------------
+Time: 70000 | PC = 0x00000004 | Inst = 0x00a00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 80000 | PC = 0x00000008 | Inst = 0x002081b3 (ALU-R )
+-----------------------------------------------------------------
+Time: 90000 | PC = 0x0000000c | Inst = 0x00000073 (ECALL )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x00000005
+-----------------------------------------------------------------
+Time: 100000 | PC = 0x00000010 | Inst = 0x00000013 (NOP   )
+          -> [WB]  WRITE REG | x2 <- 0x0000000a
+-----------------------------------------------------------------
+Time: 110000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
+          -> [WB]  WRITE REG | x3 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 120000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
+          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
+-----------------------------------------------------------------
+Time: 130000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
+          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
+-----------------------------------------------------------------
+
+[SYSTEM] Finished: DONE signal triggered successfully!
+
+==================================================
+         REGISTER FILE STATE AT FINISH            
+==================================================
+ x0 	 = 32'h00000000
+ x1 	 = 32'h00000005
+ x2 	 = 32'h0000000a
+ x3 	 = 32'h0000000f
+ x4 	 = 32'h00000000
+ x5 	 = 32'h00000000
+ x6 	 = 32'h00000000
+ x7 	 = 32'h00000000
+ x8 	 = 32'h00000000
+ x9 	 = 32'h00000000
+ x10 	 = 32'h00000000
+ x11 	 = 32'h00000000
+ x12 	 = 32'h00000000
+ x13 	 = 32'h00000000
+ x14 	 = 32'h00000000
+ x15 	 = 32'h00000000
+ x16 	 = 32'h00000000
+ x17 	 = 32'h00000000
+ x18 	 = 32'h00000000
+ x19 	 = 32'h00000000
+ x20 	 = 32'h00000000
+ x21 	 = 32'h00000000
+ x22 	 = 32'h00000000
+ x23 	 = 32'h00000000
+ x24 	 = 32'h00000000
+ x25 	 = 32'h00000000
+ x26 	 = 32'h00000000
+ x27 	 = 32'h00000000
+ x28 	 = 32'h00000000
+ x29 	 = 32'h00000000
+ x30 	 = 32'h00000000
+ x31 	 = 32'h00000000
+==================================================
+                 SIMULATION ENDED                 
+==================================================
+$finish called at time : 137 ns : File "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" Line 102
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1871.070 ; gain = 43.176
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivado/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2025.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\dmem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_3.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_21 -L smartconnect_v1_0 -L zynq_ultra_ps_e_vip_v1_0_21 -L xilinx_vip -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/encoding.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bj_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imme_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4x1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.if_id_reg
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.reg_file_default
+Compiling module xil_defaultlib.imme_gen
+Compiling module xil_defaultlib.hazard_detection_unit
+Compiling module xil_defaultlib.id_ex_reg
+Compiling module xil_defaultlib.forwarding_unit
+Compiling module xil_defaultlib.mux_4x1_32bit
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.bj_detect
+Compiling module xil_defaultlib.ex_mem_reg
+Compiling module xil_defaultlib.store_alignment
+Compiling module xil_defaultlib.mem_wb_reg
+Compiling module xil_defaultlib.load_alignment
+Compiling module xil_defaultlib.cpu_pipeline
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -protoinst "protoinst_files/bd_ae83.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_ae83.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_ae83.protoinst for the following reason(s):
+There are no instances of module "bd_ae83" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+==================================================
+      STARTING PIPELINE CPU SIMULATION            
+==================================================
+Time: 50000 | PC = 0x00000000 | Inst = 0x00000013 (NOP   )
+-----------------------------------------------------------------
+Time: 60000 | PC = 0x00000000 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 70000 | PC = 0x00000004 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 80000 | PC = 0x00000008 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 90000 | PC = 0x0000000c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 100000 | PC = 0x00000010 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 110000 | PC = 0x00000014 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 120000 | PC = 0x00000018 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 130000 | PC = 0x0000001c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 140000 | PC = 0x00000020 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 150000 | PC = 0x00000024 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 160000 | PC = 0x00000028 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 170000 | PC = 0x0000002c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 180000 | PC = 0x00000030 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 190000 | PC = 0x00000034 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 200000 | PC = 0x00000038 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 210000 | PC = 0x0000003c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 220000 | PC = 0x00000040 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 230000 | PC = 0x00000044 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 240000 | PC = 0x00000048 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 250000 | PC = 0x0000004c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 260000 | PC = 0x00000050 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 270000 | PC = 0x00000054 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 280000 | PC = 0x00000058 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 290000 | PC = 0x0000005c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 300000 | PC = 0x00000060 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 310000 | PC = 0x00000064 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 320000 | PC = 0x00000068 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 330000 | PC = 0x0000006c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 340000 | PC = 0x00000070 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 350000 | PC = 0x00000074 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 360000 | PC = 0x00000078 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 370000 | PC = 0x0000007c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 380000 | PC = 0x00000080 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 390000 | PC = 0x00000084 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 400000 | PC = 0x00000088 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 410000 | PC = 0x0000008c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 420000 | PC = 0x00000090 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 430000 | PC = 0x00000094 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 440000 | PC = 0x00000098 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 450000 | PC = 0x0000009c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 460000 | PC = 0x000000a0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 470000 | PC = 0x000000a4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 480000 | PC = 0x000000a8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 490000 | PC = 0x000000ac | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 500000 | PC = 0x000000b0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 510000 | PC = 0x000000b4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 520000 | PC = 0x000000b8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 530000 | PC = 0x000000bc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 540000 | PC = 0x000000c0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 550000 | PC = 0x000000c4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 560000 | PC = 0x000000c8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 570000 | PC = 0x000000cc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 580000 | PC = 0x000000d0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 590000 | PC = 0x000000d4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 600000 | PC = 0x000000d8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 610000 | PC = 0x000000dc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 620000 | PC = 0x000000e0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 630000 | PC = 0x000000e4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 640000 | PC = 0x000000e8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 650000 | PC = 0x000000ec | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 660000 | PC = 0x000000f0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 670000 | PC = 0x000000f4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 680000 | PC = 0x000000f8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 690000 | PC = 0x000000fc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 700000 | PC = 0x00000100 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 710000 | PC = 0x00000104 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 720000 | PC = 0x00000108 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 730000 | PC = 0x0000010c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 740000 | PC = 0x00000110 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 750000 | PC = 0x00000114 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 760000 | PC = 0x00000118 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 770000 | PC = 0x0000011c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 780000 | PC = 0x00000120 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 790000 | PC = 0x00000124 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 800000 | PC = 0x00000128 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 810000 | PC = 0x0000012c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 820000 | PC = 0x00000130 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 830000 | PC = 0x00000134 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 840000 | PC = 0x00000138 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 850000 | PC = 0x0000013c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 860000 | PC = 0x00000140 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 870000 | PC = 0x00000144 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 880000 | PC = 0x00000148 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 890000 | PC = 0x0000014c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 900000 | PC = 0x00000150 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 910000 | PC = 0x00000154 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 920000 | PC = 0x00000158 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 930000 | PC = 0x0000015c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 940000 | PC = 0x00000160 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 950000 | PC = 0x00000164 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 960000 | PC = 0x00000168 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 970000 | PC = 0x0000016c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 980000 | PC = 0x00000170 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 990000 | PC = 0x00000174 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 1000000 | PC = 0x00000178 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1872.820 ; gain = 1.750
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivado/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2025.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_3.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_21 -L smartconnect_v1_0 -L zynq_ultra_ps_e_vip_v1_0_21 -L xilinx_vip -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/encoding.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bj_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imme_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4x1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.if_id_reg
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.reg_file_default
+Compiling module xil_defaultlib.imme_gen
+Compiling module xil_defaultlib.hazard_detection_unit
+Compiling module xil_defaultlib.id_ex_reg
+Compiling module xil_defaultlib.forwarding_unit
+Compiling module xil_defaultlib.mux_4x1_32bit
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.bj_detect
+Compiling module xil_defaultlib.ex_mem_reg
+Compiling module xil_defaultlib.store_alignment
+Compiling module xil_defaultlib.mem_wb_reg
+Compiling module xil_defaultlib.load_alignment
+Compiling module xil_defaultlib.cpu_pipeline
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -protoinst "protoinst_files/bd_ae83.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_ae83.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_ae83.protoinst for the following reason(s):
+There are no instances of module "bd_ae83" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+==================================================
+      STARTING PIPELINE CPU SIMULATION            
+==================================================
+Time: 50000 | PC = 0x00000000 | Inst = 0x00000013 (NOP   )
+-----------------------------------------------------------------
+Time: 60000 | PC = 0x00000000 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 70000 | PC = 0x00000004 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 80000 | PC = 0x00000008 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 90000 | PC = 0x0000000c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 100000 | PC = 0x00000010 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 110000 | PC = 0x00000014 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 120000 | PC = 0x00000018 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 130000 | PC = 0x0000001c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 140000 | PC = 0x00000020 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 150000 | PC = 0x00000024 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 160000 | PC = 0x00000028 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 170000 | PC = 0x0000002c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 180000 | PC = 0x00000030 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 190000 | PC = 0x00000034 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 200000 | PC = 0x00000038 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 210000 | PC = 0x0000003c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 220000 | PC = 0x00000040 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 230000 | PC = 0x00000044 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 240000 | PC = 0x00000048 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 250000 | PC = 0x0000004c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 260000 | PC = 0x00000050 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 270000 | PC = 0x00000054 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 280000 | PC = 0x00000058 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 290000 | PC = 0x0000005c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 300000 | PC = 0x00000060 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 310000 | PC = 0x00000064 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 320000 | PC = 0x00000068 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 330000 | PC = 0x0000006c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 340000 | PC = 0x00000070 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 350000 | PC = 0x00000074 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 360000 | PC = 0x00000078 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 370000 | PC = 0x0000007c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 380000 | PC = 0x00000080 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 390000 | PC = 0x00000084 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 400000 | PC = 0x00000088 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 410000 | PC = 0x0000008c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 420000 | PC = 0x00000090 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 430000 | PC = 0x00000094 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 440000 | PC = 0x00000098 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 450000 | PC = 0x0000009c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 460000 | PC = 0x000000a0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 470000 | PC = 0x000000a4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 480000 | PC = 0x000000a8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 490000 | PC = 0x000000ac | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 500000 | PC = 0x000000b0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 510000 | PC = 0x000000b4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 520000 | PC = 0x000000b8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 530000 | PC = 0x000000bc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 540000 | PC = 0x000000c0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 550000 | PC = 0x000000c4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 560000 | PC = 0x000000c8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 570000 | PC = 0x000000cc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 580000 | PC = 0x000000d0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 590000 | PC = 0x000000d4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 600000 | PC = 0x000000d8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 610000 | PC = 0x000000dc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 620000 | PC = 0x000000e0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 630000 | PC = 0x000000e4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 640000 | PC = 0x000000e8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 650000 | PC = 0x000000ec | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 660000 | PC = 0x000000f0 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 670000 | PC = 0x000000f4 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 680000 | PC = 0x000000f8 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 690000 | PC = 0x000000fc | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 700000 | PC = 0x00000100 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 710000 | PC = 0x00000104 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 720000 | PC = 0x00000108 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 730000 | PC = 0x0000010c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 740000 | PC = 0x00000110 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 750000 | PC = 0x00000114 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 760000 | PC = 0x00000118 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 770000 | PC = 0x0000011c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 780000 | PC = 0x00000120 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 790000 | PC = 0x00000124 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 800000 | PC = 0x00000128 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 810000 | PC = 0x0000012c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 820000 | PC = 0x00000130 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 830000 | PC = 0x00000134 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 840000 | PC = 0x00000138 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 850000 | PC = 0x0000013c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 860000 | PC = 0x00000140 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 870000 | PC = 0x00000144 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 880000 | PC = 0x00000148 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 890000 | PC = 0x0000014c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 900000 | PC = 0x00000150 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 910000 | PC = 0x00000154 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 920000 | PC = 0x00000158 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 930000 | PC = 0x0000015c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 940000 | PC = 0x00000160 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 950000 | PC = 0x00000164 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 960000 | PC = 0x00000168 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 970000 | PC = 0x0000016c | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 980000 | PC = 0x00000170 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 990000 | PC = 0x00000174 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 1000000 | PC = 0x00000178 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.484 ; gain = 0.727
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\dmem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\dmem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\dmem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\dmem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\dmem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\dmem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivado/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2025.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_3.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/data.mem'
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_21 -L smartconnect_v1_0 -L zynq_ultra_ps_e_vip_v1_0_21 -L xilinx_vip -prj tb_riscv_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -protoinst "protoinst_files/bd_ae83.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_ae83.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_ae83.protoinst for the following reason(s):
+There are no instances of module "bd_ae83" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+==================================================
+      STARTING PIPELINE CPU SIMULATION            
+==================================================
+Time: 50000 | PC = 0x00000000 | Inst = 0x00000013 (NOP   )
+-----------------------------------------------------------------
+Time: 60000 | PC = 0x00000000 | Inst = 0x00500093 (ALU-I )
+-----------------------------------------------------------------
+Time: 70000 | PC = 0x00000004 | Inst = 0x00a00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 80000 | PC = 0x00000008 | Inst = 0x002081b3 (ALU-R )
+-----------------------------------------------------------------
+Time: 90000 | PC = 0x0000000c | Inst = 0x00000073 (ECALL )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x00000005
+-----------------------------------------------------------------
+Time: 100000 | PC = 0x00000010 | Inst = 0x00000013 (NOP   )
+          -> [WB]  WRITE REG | x2 <- 0x0000000a
+-----------------------------------------------------------------
+Time: 110000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
+          -> [WB]  WRITE REG | x3 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 120000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
+          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
+-----------------------------------------------------------------
+Time: 130000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
+          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
+-----------------------------------------------------------------
+
+[SYSTEM] Finished: DONE signal triggered successfully!
+
+==================================================
+         REGISTER FILE STATE AT FINISH            
+==================================================
+ x0 	 = 32'h00000000
+ x1 	 = 32'h00000005
+ x2 	 = 32'h0000000a
+ x3 	 = 32'h0000000f
+ x4 	 = 32'h00000000
+ x5 	 = 32'h00000000
+ x6 	 = 32'h00000000
+ x7 	 = 32'h00000000
+ x8 	 = 32'h00000000
+ x9 	 = 32'h00000000
+ x10 	 = 32'h00000000
+ x11 	 = 32'h00000000
+ x12 	 = 32'h00000000
+ x13 	 = 32'h00000000
+ x14 	 = 32'h00000000
+ x15 	 = 32'h00000000
+ x16 	 = 32'h00000000
+ x17 	 = 32'h00000000
+ x18 	 = 32'h00000000
+ x19 	 = 32'h00000000
+ x20 	 = 32'h00000000
+ x21 	 = 32'h00000000
+ x22 	 = 32'h00000000
+ x23 	 = 32'h00000000
+ x24 	 = 32'h00000000
+ x25 	 = 32'h00000000
+ x26 	 = 32'h00000000
+ x27 	 = 32'h00000000
+ x28 	 = 32'h00000000
+ x29 	 = 32'h00000000
+ x30 	 = 32'h00000000
+ x31 	 = 32'h00000000
+==================================================
+                 SIMULATION ENDED                 
+==================================================
+$finish called at time : 137 ns : File "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" Line 102
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1875.277 ; gain = 0.793
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 13:11:14 2026...
