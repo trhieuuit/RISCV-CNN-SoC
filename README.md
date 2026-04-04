@@ -25,16 +25,11 @@ The processor is capable of executing compiled RISC-V machine code and has been 
   * Control hazard flushing
 * FPGA-tested with KV260
 
----
-
-## 🧠 Architecture
-
 
 ---
 
 ## 🧩 Supported Instructions (RV32I)
 
-Includes:
 
 * R-type: ADD, SUB, AND, OR, XOR, SLT
 * I-type: ADDI, LW, ANDI, ORI
@@ -43,6 +38,12 @@ Includes:
 * U-type: LUI
 * J-type: JAL
 * System: ECALL (set Done flag)
+
+---
+
+## 🧠 Architecture
+
+
 
 
 ---
