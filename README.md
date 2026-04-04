@@ -75,7 +75,7 @@ module imem#((
 ...
   // !!! Comment this line if yorue loading machine code in test bench module !!! 
   // !!! Remember to paste the machine code in machine_code.mem !!!
-  //$readmemh("D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/new/machine_code.mem",  rom_r);
+  $readmemh("machine_code.mem",  rom_r);
 ...
 ```
 - Then paste the instructions in `machine_code.mem`
