@@ -60,12 +60,12 @@ module design_1_riscv_wrapper_0_0 (
   rst_ni,
   rv_start_i,
   rv_done_o,
+  imem_rdata_i,
   imem_addr_o,
   imem_en_o,
-  imem_rdata_i,
+  dmem_rdata_i,
   dmem_addr_o,
   dmem_wdata_o,
-  dmem_rdata_i,
   dmem_we_o,
   dmem_en_o
 );
@@ -74,12 +74,12 @@ input wire clk_i;
 input wire rst_ni;
 input wire rv_start_i;
 output wire rv_done_o;
+input wire [31 : 0] imem_rdata_i;
 output wire [31 : 0] imem_addr_o;
 output wire imem_en_o;
-input wire [31 : 0] imem_rdata_i;
+input wire [31 : 0] dmem_rdata_i;
 output wire [31 : 0] dmem_addr_o;
 output wire [31 : 0] dmem_wdata_o;
-input wire [31 : 0] dmem_rdata_i;
 output wire [3 : 0] dmem_we_o;
 output wire dmem_en_o;
 
@@ -88,12 +88,12 @@ output wire dmem_en_o;
     .rst_ni(rst_ni),
     .rv_start_i(rv_start_i),
     .rv_done_o(rv_done_o),
+    .imem_rdata_i(imem_rdata_i),
     .imem_addr_o(imem_addr_o),
     .imem_en_o(imem_en_o),
-    .imem_rdata_i(imem_rdata_i),
+    .dmem_rdata_i(dmem_rdata_i),
     .dmem_addr_o(dmem_addr_o),
     .dmem_wdata_o(dmem_wdata_o),
-    .dmem_rdata_i(dmem_rdata_i),
     .dmem_we_o(dmem_we_o),
     .dmem_en_o(dmem_en_o)
   );

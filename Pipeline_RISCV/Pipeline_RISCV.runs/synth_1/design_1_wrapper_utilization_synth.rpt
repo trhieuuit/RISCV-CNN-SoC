@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Sat Mar 28 10:26:21 2026
+| Date         : Fri Apr  3 21:38:30 2026
 | Host         : DESKTOP-0UL7VKJ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 13208 |     0 |          0 |    117120 | 11.28 |
-|   LUT as Logic             | 10620 |     0 |          0 |    117120 |  9.07 |
+| CLB LUTs*                  | 13206 |     0 |          0 |    117120 | 11.28 |
+|   LUT as Logic             | 10618 |     0 |          0 |    117120 |  9.07 |
 |   LUT as Memory            |  2588 |     0 |          0 |     57600 |  4.49 |
 |     LUT as Distributed RAM |  1260 |     0 |            |           |       |
 |     LUT as Shift Register  |  1328 |     0 |            |           |       |
-| CLB Registers              | 14752 |     0 |          0 |    234240 |  6.30 |
-|   Register as Flip Flop    | 14752 |     0 |          0 |    234240 |  6.30 |
+| CLB Registers              | 14753 |     0 |          0 |    234240 |  6.30 |
+|   Register as Flip Flop    | 14753 |     0 |          0 |    234240 |  6.30 |
 |   Register as Latch        |     0 |     0 |          0 |    234240 |  0.00 |
 | CARRY8                     |    34 |     0 |          0 |     14640 |  0.23 |
 | F7 Muxes                   |   128 |     0 |          0 |     58560 |  0.22 |
@@ -65,7 +65,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |          Set |
 | 211   |          Yes |           - |        Reset |
 | 485   |          Yes |         Set |            - |
-| 14056 |          Yes |       Reset |            - |
+| 14057 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -172,15 +172,15 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDRE     | 14056 |            Register |
-| LUT6     |  4324 |                 CLB |
-| LUT3     |  3182 |                 CLB |
+| FDRE     | 14057 |            Register |
+| LUT6     |  4330 |                 CLB |
+| LUT3     |  3178 |                 CLB |
 | RAMD32   |  2196 |                 CLB |
-| LUT5     |  2147 |                 CLB |
-| LUT4     |  2009 |                 CLB |
+| LUT5     |  2146 |                 CLB |
+| LUT4     |  2007 |                 CLB |
 | LUT2     |  1041 |                 CLB |
 | SRLC32E  |   950 |                 CLB |
-| LUT1     |   708 |                 CLB |
+| LUT1     |   709 |                 CLB |
 | FDSE     |   485 |            Register |
 | SRL16E   |   378 |                 CLB |
 | RAMS32   |   312 |                 CLB |

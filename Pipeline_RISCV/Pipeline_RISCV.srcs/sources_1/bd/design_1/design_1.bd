@@ -1603,6 +1603,11 @@
           "rv_done_o": {
             "direction": "O"
           },
+          "imem_rdata_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
           "imem_addr_o": {
             "direction": "O",
             "left": "31",
@@ -1611,7 +1616,7 @@
           "imem_en_o": {
             "direction": "O"
           },
-          "imem_rdata_i": {
+          "dmem_rdata_i": {
             "direction": "I",
             "left": "31",
             "right": "0"
@@ -1623,11 +1628,6 @@
           },
           "dmem_wdata_o": {
             "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "dmem_rdata_i": {
-            "direction": "I",
             "left": "31",
             "right": "0"
           },

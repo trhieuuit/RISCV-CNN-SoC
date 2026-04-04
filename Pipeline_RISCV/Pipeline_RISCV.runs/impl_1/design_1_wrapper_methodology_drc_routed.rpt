@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Sat Mar 28 10:32:43 2026
+| Date         : Fri Apr  3 21:43:23 2026
 | Host         : DESKTOP-0UL7VKJ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,33 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 1
-+---------+----------+------------------------------+--------+
-| Rule    | Severity | Description                  | Checks |
-+---------+----------+------------------------------+--------+
-| LUTAR-1 | Warning  | LUT drives async reset alert | 1      |
-+---------+----------+------------------------------+--------+
+             Checks found: 0
++------+----------+-------------+--------+
+| Rule | Severity | Description | Checks |
++------+----------+-------------+--------+
++------+----------+-------------+--------+
 
 2. REPORT DETAILS
 -----------------
-LUTAR-1#1 Warning
-LUT drives async reset alert  
-LUT cell design_1_i/riscv_wrapper_0/inst/rv_core/register_file/cpu_halted_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/riscv_wrapper_0/inst/rv_core/cpu_halted_reg/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/flush_delay_reg/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[27]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[28]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[29]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[2]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[30]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[31]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[3]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[4]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[5]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[6]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[7]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[8]/CLR,
-design_1_i/riscv_wrapper_0/inst/rv_core/program_counter/pc_o_reg[9]/CLR
- (the first 15 of 34 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
 

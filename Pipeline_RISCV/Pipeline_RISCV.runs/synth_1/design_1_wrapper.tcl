@@ -56,8 +56,16 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
+set_param power.BramSDPPropagationFix 1
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
 set_param bd.open.in_stealth_mode 1
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
@@ -77,26 +85,26 @@ set_property ip_output_repo c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pi
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_mem C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/new/machine_code.mem
+read_mem C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/machine_code.mem
 read_verilog -library xil_defaultlib {
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/utils/encoding.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/alu.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/bj_detect.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/control_unit.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/new/cpu_pipeline.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/ex_mem_reg.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/unit_modules/unit_modules_rtl/forwarding_unit.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/hazard_detection_unit.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/id_ex_reg.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/if_id_reg.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/imme_gen.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/load_alignment.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/CNN-SoC/cpu_pipeline/pipeline_reg/mem_wb_reg.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/mux_4x1_32bit.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/pc.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/imports/rtl/reg_file.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/imports/RISCV/RISCV.srcs/sources_1/new/store_alignment.v
-  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/new/riscv_wrapper.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/encoding.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v
+  C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv_wrapper.v
   C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 }
 add_files C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/bd/design_1/design_1.bd
