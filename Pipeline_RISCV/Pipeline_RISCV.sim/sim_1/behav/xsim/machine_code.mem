@@ -1,6 +1,15 @@
-00500093  // addr 0: addi x1, x0, 5 
-00a00113  // addr 1: addi x2, x0, 10
-002081b3  // addr 2: add  x3, x1, x2
-00000073  // addr 3: ecall          
-00000013  // addr 4: NOP (addi x0, x0, 0)
-00000013  // addr 5: NOP (addi x0, x0, 0)
+
+00400513  // addr 0:  addi x10, x0, 4     (li a0, 4)
+02000593  // addr 1:  addi x11, x0, 32    (li a1, 0x20)
+00a00293  // addr 2:  addi x5,  x0, 10    (li t0, 10)
+00528333  // addr 3:  add  x6,  x5, x5    (add t1, t0, t0)
+005303b3  // addr 4:  add  x7,  x6, x5    (add t2, t1, t0)
+0075a023  // addr 5:  sw   x7,  0(x11)    (sw t2, 0(a1))
+0005ae03  // addr 6:  lw   x28, 0(x11)    (lw t3, 0(a1))
+01ce0eb3  // addr 7:  add  x29, x28, x28  (add t4, t3, t3)
+01d52023  // addr 8:  sw   x29, 0(x10)    (sw t4, 0(a0))
+00000013  // addr 9:  addi x0,  x0, 0     (nop)
+00000013  // addr 10: addi x0,  x0, 0     (nop)
+00000013  // addr 11: addi x0,  x0, 0     (nop)
+00000073  // addr 12: ecall               (ecall)
+0000006f  // addr 13: jal  x0,  0         (die: j die)

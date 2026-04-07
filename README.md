@@ -95,8 +95,10 @@ module imem#((
 
 ## 📊 Performance
 
-* Achieved frequency:  100 MHz
-* Critical path slack: 2.481 ns
+* Tested frequency:  100 MHz
+* Critical path slack: 1.49 ns
+* Estimated max frequency: 117.5 MHz
+	
 
 ---
 

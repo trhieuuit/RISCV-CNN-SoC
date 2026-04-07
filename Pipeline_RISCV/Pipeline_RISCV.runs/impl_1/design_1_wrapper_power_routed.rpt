@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Fri Apr  3 21:43:36 2026
+| Date             : Tue Apr  7 20:07:47 2026
 | Host             : DESKTOP-0UL7VKJ running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.028 |        4 |       --- |             --- |
-| CLB Logic                |     0.059 |    32505 |       --- |             --- |
+| CLB Logic                |     0.059 |    32492 |       --- |             --- |
 |   LUT as Distributed RAM |     0.028 |     1260 |     57600 |            2.19 |
-|   LUT as Logic           |     0.022 |     9961 |    117120 |            8.50 |
+|   LUT as Logic           |     0.022 |     9968 |    117120 |            8.51 |
 |   LUT as Shift Register  |     0.006 |     1328 |     57600 |            2.31 |
-|   Register               |     0.002 |    14642 |    234240 |            6.25 |
+|   Register               |     0.002 |    14644 |    234240 |            6.25 |
 |   CARRY8                 |    <0.001 |       34 |     14640 |            0.23 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |      753 |       --- |             --- |
+|   Others                 |     0.000 |      738 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      192 |    117120 |            0.16 |
-| Signals                  |     0.039 |    21900 |       --- |             --- |
+| Signals                  |     0.039 |    21901 |       --- |             --- |
 | Block RAM                |     0.031 |       32 |       144 |           22.22 |
 | PS8                      |     2.417 |        1 |       --- |             --- |
 | Static Power             |     0.302 |          |           |                 |
@@ -171,14 +171,14 @@ Table of Contents
 |       U0              |     0.002 |
 |     axi_bram_ctrl_1   |     0.002 |
 |       U0              |     0.002 |
-|     axi_smc           |     0.106 |
-|       inst            |     0.106 |
+|     axi_smc           |     0.107 |
+|       inst            |     0.107 |
 |     blk_mem_gen_0     |     0.021 |
 |       U0              |     0.021 |
 |     blk_mem_gen_1     |     0.011 |
 |       U0              |     0.011 |
-|     riscv_wrapper_0   |     0.015 |
-|       inst            |     0.015 |
+|     riscv_wrapper_0   |     0.014 |
+|       inst            |     0.014 |
 |     zynq_ultra_ps_e_0 |     2.418 |
 |       inst            |     2.418 |
 +-----------------------+-----------+

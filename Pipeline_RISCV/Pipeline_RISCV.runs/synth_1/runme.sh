@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1'
+HD_PWD='C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

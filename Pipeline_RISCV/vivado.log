@@ -3,12 +3,12 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Apr  4 13:26:10 2026
-# Process ID         : 19676
-# Current directory  : C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9720 C:\Users\nguye\Desktop\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.xpr
-# Log file           : C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/vivado.log
-# Journal file       : C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV\vivado.jou
+# Start of session at: Tue Apr  7 20:11:34 2026
+# Process ID         : 17772
+# Current directory  : C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent4460 C:\Users\nguye\Desktop\new\RISCV-CNN-SoC\Pipeline_RISCV\Pipeline_RISCV.xpr
+# Log file           : C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/vivado.log
+# Journal file       : C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV\vivado.jou
 # Running On         : DESKTOP-0UL7VKJ
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -19,10 +19,10 @@
 # Host memory        : 16474 MB
 # Swap memory        : 9663 MB
 # Total Virtual      : 26138 MB
-# Available Virtual  : 8791 MB
+# Available Virtual  : 13158 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.xpr
+open_project C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
@@ -62,8 +62,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/mul.v'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/unsigned_div.v'.
 Scanning sources...
 Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
@@ -109,10 +107,39 @@ WARNING: [Board 49-151] The current board 'xilinx.com::kv260_som:1.4' is from a 
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2025.1/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 1800.934 ; gain = 274.312
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 1800.988 ; gain = 287.449
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/mul.v] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/unsigned_div.v] -no_script -reset -force -quiet
-remove_files  {C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/mul.v C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/unsigned_div.v}
+open_run impl_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.592 . Memory (MB): peak = 2834.406 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 388 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2834.406 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3183.211 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.037 . Memory (MB): peak = 3183.211 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3211.129 ; gain = 27.918
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3211.129 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3727.461 ; gain = 516.332
+Read Physdb Files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3727.461 ; gain = 544.250
+Restored from archive | CPU: 9.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3727.461 ; gain = 544.250
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3727.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 162 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 156 instances
+
+open_run: Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 5019.578 ; gain = 3205.855
+open_report: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 5200.605 ; gain = 113.660
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 13:27:39 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 20:15:54 2026...

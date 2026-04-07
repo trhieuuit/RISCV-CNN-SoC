@@ -1,0 +1,41 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/encoding.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bj_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imme_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4x1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv

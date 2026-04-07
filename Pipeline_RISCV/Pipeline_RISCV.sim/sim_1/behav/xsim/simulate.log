@@ -4,27 +4,61 @@ Time resolution is 1 ps
 ==================================================
 Time: 50000 | PC = 0x00000000 | Inst = 0x00000013 (NOP   )
 -----------------------------------------------------------------
-Time: 60000 | PC = 0x00000000 | Inst = 0x00500093 (ALU-I )
+Time: 60000 | PC = 0x00000000 | Inst = 0x00400513 (ALU-I )
 -----------------------------------------------------------------
-Time: 70000 | PC = 0x00000004 | Inst = 0x00a00113 (ALU-I )
+Time: 70000 | PC = 0x00000004 | Inst = 0x02000593 (ALU-I )
 -----------------------------------------------------------------
-Time: 80000 | PC = 0x00000008 | Inst = 0x002081b3 (ALU-R )
+Time: 80000 | PC = 0x00000008 | Inst = 0x00a00293 (ALU-I )
 -----------------------------------------------------------------
-Time: 90000 | PC = 0x0000000c | Inst = 0x00000073 (ECALL )
-          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
-          -> [WB]  WRITE REG | x1 <- 0x00000005
+Time: 90000 | PC = 0x0000000c | Inst = 0x00528333 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x10 <- 0x00000004
 -----------------------------------------------------------------
-Time: 100000 | PC = 0x00000010 | Inst = 0x00000013 (NOP   )
-          -> [WB]  WRITE REG | x2 <- 0x0000000a
+Time: 100000 | PC = 0x00000010 | Inst = 0x005303b3 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x00000020
 -----------------------------------------------------------------
-Time: 110000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
-          -> [WB]  WRITE REG | x3 <- 0x0000000f
+Time: 110000 | PC = 0x00000014 | Inst = 0x0075a023 (STORE )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 10
+          -> [WB]  WRITE REG | x5 <- 0x0000000a
 -----------------------------------------------------------------
-Time: 120000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
+Time: 120000 | PC = 0x00000018 | Inst = 0x0005ae03 (LOAD  )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x6 <- 0x00000014
+-----------------------------------------------------------------
+Time: 130000 | PC = 0x0000001c | Inst = 0x01ce0eb3 (ALU-R )
+          -> [HAZARD] STALL: Pipeline stalled waiting for Load data!
+          -> [MEM] WRITE RAM | Addr: 0x00000020 <- Data: 0x0000001e
+          -> [WB]  WRITE REG | x7 <- 0x0000001e
+-----------------------------------------------------------------
+Time: 140000 | PC = 0x0000001c | Inst = 0x01ce0eb3 (ALU-R )
+          -> [MEM] READ RAM  | Read requested at Addr: 0x00000020
+-----------------------------------------------------------------
+Time: 150000 | PC = 0x00000020 | Inst = 0x01d52023 (STORE )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 10
+          -> [WB]  LOAD REG  | x28 <- 0x0000001e (Raw RAM Data: 0x0000001e)
+-----------------------------------------------------------------
+Time: 160000 | PC = 0x00000024 | Inst = 0x00000013 (NOP   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 170000 | PC = 0x00000028 | Inst = 0x00000013 (NOP   )
+          -> [MEM] WRITE RAM | Addr: 0x00000004 <- Data: 0x0000003c
+          -> [WB]  WRITE REG | x29 <- 0x0000003c
+-----------------------------------------------------------------
+Time: 180000 | PC = 0x0000002c | Inst = 0x00000013 (NOP   )
+-----------------------------------------------------------------
+Time: 190000 | PC = 0x00000030 | Inst = 0x00000073 (ECALL )
+-----------------------------------------------------------------
+Time: 200000 | PC = 0x00000034 | Inst = 0x0000006f (JAL   )
+-----------------------------------------------------------------
+Time: 210000 | PC = 0x00000038 | Inst = 0x00000013 (NOP   )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000034
+-----------------------------------------------------------------
+Time: 220000 | PC = 0x00000000 | Inst = 0x00000013 (NOP   )
           -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
 -----------------------------------------------------------------
-Time: 130000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
-          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
+Time: 230000 | PC = 0x00000038 | Inst = 0x00000000 (BUBBLE)
 -----------------------------------------------------------------
 
 [SYSTEM] Finished: DONE signal triggered successfully!
@@ -33,17 +67,17 @@ Time: 130000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
          REGISTER FILE STATE AT FINISH            
 ==================================================
  x0 	 = 32'h00000000
- x1 	 = 32'h00000005
- x2 	 = 32'h0000000a
- x3 	 = 32'h0000000f
+ x1 	 = 32'h00000000
+ x2 	 = 32'h00000000
+ x3 	 = 32'h00000000
  x4 	 = 32'h00000000
- x5 	 = 32'h00000000
- x6 	 = 32'h00000000
- x7 	 = 32'h00000000
+ x5 	 = 32'h0000000a
+ x6 	 = 32'h00000014
+ x7 	 = 32'h0000001e
  x8 	 = 32'h00000000
  x9 	 = 32'h00000000
- x10 	 = 32'h00000000
- x11 	 = 32'h00000000
+ x10 	 = 32'h00000004
+ x11 	 = 32'h00000020
  x12 	 = 32'h00000000
  x13 	 = 32'h00000000
  x14 	 = 32'h00000000
@@ -60,11 +94,11 @@ Time: 130000 | PC = 0x00000014 | Inst = 0x00000013 (NOP   )
  x25 	 = 32'h00000000
  x26 	 = 32'h00000000
  x27 	 = 32'h00000000
- x28 	 = 32'h00000000
- x29 	 = 32'h00000000
+ x28 	 = 32'h0000001e
+ x29 	 = 32'h0000003c
  x30 	 = 32'h00000000
  x31 	 = 32'h00000000
 ==================================================
                  SIMULATION ENDED                 
 ==================================================
-$finish called at time : 137 ns : File "C:/Users/nguye/Desktop/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" Line 102
+$finish called at time : 237 ns : File "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" Line 102

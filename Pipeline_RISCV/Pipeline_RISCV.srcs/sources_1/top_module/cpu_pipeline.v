@@ -140,8 +140,8 @@ module cpu_pipeline(
     // Assign BRAM input port 
     assign instr_addr_o = if_pc_data_w;
     
-    // IMEM always enabled
-    assign instr_en_o = 1'b1;
+    // Freeze IMEM output during a Hazard Stall
+    assign instr_en_o = ~stall_pc_if_id_w;
     
     // PC = PC + 4
     assign if_pc_plus_4_w = if_pc_data_w + 32'd4;

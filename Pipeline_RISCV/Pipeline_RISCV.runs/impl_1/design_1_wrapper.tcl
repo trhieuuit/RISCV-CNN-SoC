@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.runs/impl_1/design_1_wrapper.tcl"
+  variable script "C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,10 +97,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -110,10 +108,6 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
   set_param general.usePosixSpawnForFork 1
-  set_param power.BramSDPPropagationFix 1
-  set_param power.enableUnconnectedCarry8PinPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.enableLutRouteBelPower 1
   set_param bd.open.in_stealth_mode 1
   set_param runs.launchOptions { -jobs 12  }
 OPTRACE "create in-memory project" START { }
@@ -124,17 +118,17 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.cache/wt [current_project]
-  set_property parent.project_path C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.xpr [current_project]
-  set_property ip_output_repo C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.cache/wt [current_project]
+  set_property parent.project_path C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.xpr [current_project]
+  set_property ip_output_repo C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/bd/design_1/design_1.bd
+  add_files C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }

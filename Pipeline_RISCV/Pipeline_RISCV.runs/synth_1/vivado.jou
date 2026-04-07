@@ -3,12 +3,12 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Apr  3 21:33:02 2026
-# Process ID         : 16348
-# Current directory  : C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1
+# Start of session at: Tue Apr  7 19:55:26 2026
+# Process ID         : 19052
+# Current directory  : C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1
 # Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file           : C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1/design_1_wrapper.vds
-# Journal file       : C:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1\vivado.jou
+# Log file           : C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1/design_1_wrapper.vds
+# Journal file       : C:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.runs/synth_1\vivado.jou
 # Running On         : DESKTOP-0UL7VKJ
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -19,6 +19,6 @@
 # Host memory        : 16474 MB
 # Swap memory        : 9663 MB
 # Total Virtual      : 26138 MB
-# Available Virtual  : 6786 MB
+# Available Virtual  : 10628 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

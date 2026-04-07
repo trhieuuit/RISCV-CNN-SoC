@@ -22,145 +22,145 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_bl
 # IP: bd/design_1/ip/design_1_axi_smc_3/design_1_axi_smc_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_smc_3 || ORIG_REF_NAME==design_1_axi_smc_3} -quiet] -quiet
 
-# Block Designs: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/bd_ae83.bd
+# Block Designs: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/bd_ae83.bd
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_0/bd_ae83_one_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_0/bd_ae83_one_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr_aclk_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr_aclk_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_arsw_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_arsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_rsw_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_rsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_4/bd_ae83_awsw_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_4/bd_ae83_awsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_5/bd_ae83_wsw_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_5/bd_ae83_wsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_6/bd_ae83_bsw_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_6/bd_ae83_bsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_7/bd_ae83_s00mmu_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_7/bd_ae83_s00mmu_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_8/bd_ae83_s00tr_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_8/bd_ae83_s00tr_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_9/bd_ae83_s00sic_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_9/bd_ae83_s00sic_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_10/bd_ae83_s00a2s_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_10/bd_ae83_s00a2s_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_11/bd_ae83_sarn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_11/bd_ae83_sarn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_12/bd_ae83_srn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_12/bd_ae83_srn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_13/bd_ae83_sawn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_13/bd_ae83_sawn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_14/bd_ae83_swn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_14/bd_ae83_swn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_15/bd_ae83_sbn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_15/bd_ae83_sbn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_16/bd_ae83_s01mmu_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_16/bd_ae83_s01mmu_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_17/bd_ae83_s01tr_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_17/bd_ae83_s01tr_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_18/bd_ae83_s01sic_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_18/bd_ae83_s01sic_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_19/bd_ae83_s01a2s_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_19/bd_ae83_s01a2s_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_20/bd_ae83_sarn_1.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_20/bd_ae83_sarn_1.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_21/bd_ae83_srn_1.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_21/bd_ae83_srn_1.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_22/bd_ae83_sawn_1.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_22/bd_ae83_sawn_1.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_23/bd_ae83_swn_1.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_23/bd_ae83_swn_1.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_24/bd_ae83_sbn_1.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_24/bd_ae83_sbn_1.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_25/bd_ae83_m00s2a_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_25/bd_ae83_m00s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_26/bd_ae83_m00arn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_26/bd_ae83_m00arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_27/bd_ae83_m00rn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_27/bd_ae83_m00rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_28/bd_ae83_m00awn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_28/bd_ae83_m00awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_29/bd_ae83_m00wn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_29/bd_ae83_m00wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_30/bd_ae83_m00bn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_30/bd_ae83_m00bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_31/bd_ae83_m00e_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_31/bd_ae83_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_32/bd_ae83_m01s2a_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_32/bd_ae83_m01s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_33/bd_ae83_m01arn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_33/bd_ae83_m01arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_34/bd_ae83_m01rn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_34/bd_ae83_m01rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_35/bd_ae83_m01awn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_35/bd_ae83_m01awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_36/bd_ae83_m01wn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_36/bd_ae83_m01wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_37/bd_ae83_m01bn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_37/bd_ae83_m01bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_38/bd_ae83_m01e_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_38/bd_ae83_m01e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_39/bd_ae83_m02s2a_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_39/bd_ae83_m02s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_40/bd_ae83_m02arn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_40/bd_ae83_m02arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_41/bd_ae83_m02rn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_41/bd_ae83_m02rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_42/bd_ae83_m02awn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_42/bd_ae83_m02awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_43/bd_ae83_m02wn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_43/bd_ae83_m02wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_44/bd_ae83_m02bn_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_44/bd_ae83_m02bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_45/bd_ae83_m02e_0.xci
+# IP: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_45/bd_ae83_m02e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
 # IP: bd/design_1/ip/design_1_rst_ps8_0_99M_3/design_1_rst_ps8_0_99M_3.xci
@@ -172,99 +172,99 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_riscv_wrapper_0_0/design_1_riscv_wrapper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_riscv_wrapper_0_0 || ORIG_REF_NAME==design_1_riscv_wrapper_0_0} -quiet] -quiet
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==design_1_zynq_ultra_ps_e_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr_aclk_0_board.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_arsw_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_arsw_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_rsw_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_rsw_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_4/bd_ae83_awsw_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_4/bd_ae83_awsw_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_5/bd_ae83_wsw_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_5/bd_ae83_wsw_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_6/bd_ae83_bsw_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_6/bd_ae83_bsw_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_10/bd_ae83_s00a2s_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_10/bd_ae83_s00a2s_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_11/bd_ae83_sarn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_11/bd_ae83_sarn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_12/bd_ae83_srn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_12/bd_ae83_srn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_13/bd_ae83_sawn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_13/bd_ae83_sawn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_14/bd_ae83_swn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_14/bd_ae83_swn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_15/bd_ae83_sbn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_15/bd_ae83_sbn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_19/bd_ae83_s01a2s_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_19/bd_ae83_s01a2s_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_20/bd_ae83_sarn_1_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_20/bd_ae83_sarn_1_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_21/bd_ae83_srn_1_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_21/bd_ae83_srn_1_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_22/bd_ae83_sawn_1_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_22/bd_ae83_sawn_1_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_23/bd_ae83_swn_1_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_23/bd_ae83_swn_1_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_24/bd_ae83_sbn_1_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_24/bd_ae83_sbn_1_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_25/bd_ae83_m00s2a_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_25/bd_ae83_m00s2a_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_26/bd_ae83_m00arn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_26/bd_ae83_m00arn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_27/bd_ae83_m00rn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_27/bd_ae83_m00rn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_28/bd_ae83_m00awn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_28/bd_ae83_m00awn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_29/bd_ae83_m00wn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_29/bd_ae83_m00wn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_30/bd_ae83_m00bn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_30/bd_ae83_m00bn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_32/bd_ae83_m01s2a_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_32/bd_ae83_m01s2a_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_33/bd_ae83_m01arn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_33/bd_ae83_m01arn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_34/bd_ae83_m01rn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_34/bd_ae83_m01rn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_35/bd_ae83_m01awn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_35/bd_ae83_m01awn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_36/bd_ae83_m01wn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_36/bd_ae83_m01wn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_37/bd_ae83_m01bn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_37/bd_ae83_m01bn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_39/bd_ae83_m02s2a_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_39/bd_ae83_m02s2a_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_40/bd_ae83_m02arn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_40/bd_ae83_m02arn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_41/bd_ae83_m02rn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_41/bd_ae83_m02rn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_42/bd_ae83_m02awn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_42/bd_ae83_m02awn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_43/bd_ae83_m02wn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_43/bd_ae83_m02wn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_44/bd_ae83_m02bn_0_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_44/bd_ae83_m02bn_0_ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/ooc.xdc
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/smartconnect.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/smartconnect.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_smc_3 || ORIG_REF_NAME==design_1_axi_smc_3} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_3/design_1_rst_ps8_0_99M_3_board.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_3/design_1_rst_ps8_0_99M_3_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps8_0_99M_3 || ORIG_REF_NAME==design_1_rst_ps8_0_99M_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/nguye/Desktop/LAB/Project/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: c:/Users/nguye/Desktop/new/RISCV-CNN-SoC/Pipeline_RISCV/Pipeline_RISCV.gen/sources_1/bd/design_1/design_1_ooc.xdc
