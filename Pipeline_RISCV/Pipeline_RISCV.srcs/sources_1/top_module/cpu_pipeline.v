@@ -176,16 +176,7 @@ module cpu_pipeline(
 //                       ID stage                           //
 //==========================================================//
     
-    // Handle flush for instruction (because IMEM doesnt go through a pipelined register)
-    assign id_instr_w = (flush_if_id_w | flush_delay_r ) ? 32'h00000013 : instr_i;
-    
-    // U type / J type recognition
-    assign id_u_type_w = (id_instr_w[6:0] == 7'b0110111) || (id_instr_w[6:0] == 7'b0010111); 
-    assign id_j_type_w = (id_instr_w[6:0] == 7'b1101111); 
-    
-    
-    assign id_clean_rs1_addr_w = (id_u_type_w || id_j_type_w) ? 5'b0 : instr_i[19:15];
-    
+
     // Done signal after using ecall
     always @(posedge clk_i or negedge reset_ni) begin
         if (!reset_ni) 
@@ -203,9 +194,9 @@ module cpu_pipeline(
     end
   
     control_unit ctrl_unit(
-        .opcode_i       (id_instr_w[6:0]), 
-        .funct3_i       (id_instr_w[14:12]), 
-        .funct7_i       (id_instr_w[31:25]),
+        .opcode_i       (instr_i[6:0]), 
+        .funct3_i       (instr_i[14:12]), 
+        .funct7_i       (instr_i[31:25]),
         .op1sel_o       (id_op1sel_w), 
         .op2sel_o       (id_op2sel_w), 
         .reg_write_en_o (id_reg_write_en_w), 
@@ -224,8 +215,8 @@ module cpu_pipeline(
         .clk_i    (clk_i), 
         .rst_ni   (reset_ni),
         // ID stage
-        .raddr1_i (id_clean_rs1_addr_w), 
-        .raddr2_i (id_instr_w[24:20]), 
+        .raddr1_i (instr_i[19:15]),  
+        .raddr2_i (instr_i[24:20]),
         .rdata1_o (id_rs1_data_w), 
         .rdata2_o (id_rs2_data_w),
         // WB stage 
@@ -235,15 +226,15 @@ module cpu_pipeline(
     );
 
     imme_gen immediate_generator (
-        .in_i       (id_instr_w[31:7]), 
+        .in_i       (instr_i[31:7]),
         .imm_sel_i  (id_imm_sel_w), 
         .out_o      (id_imm_w)
     );
     
      hazard_detection_unit hdu (
         // ID stage
-        .id_rs1_i          (id_clean_rs1_addr_w),
-        .id_rs2_i          (id_instr_w[24:20]),
+        .id_rs1_i          (instr_i[19:15]), // ĐI DÂY THẲNG
+        .id_rs2_i          (instr_i[24:20]), // ĐI DÂY THẲNG
         // EX stage
         .ex_rd_i           (ex_rd_in_w),          
         .ex_is_load_i      (ex_d_dmemsel_w),      
@@ -260,13 +251,12 @@ module cpu_pipeline(
     id_ex_reg id_ex_pipeline_reg (
         .clk_i         (clk_i),
         .rst_ni        (reset_ni),
-        .flush_i       (flush_id_ex_w),
-        
+        .flush_i       (flush_id_ex_w | flush_delay_r),
         // ID input
         .pc_i          (id_pc_data_w),
-        .rd_i          (id_instr_w[11:7]),
-        .rs1_addr_i    (id_clean_rs1_addr_w), 
-        .rs2_addr_i    (id_instr_w[24:20]),
+        .rd_i          (instr_i[11:7]),      
+        .rs1_addr_i    (instr_i[19:15]),     
+        .rs2_addr_i    (instr_i[24:20]),
         .rs1_i         (id_rs1_data_w),
         .rs2_i         (id_rs2_data_w),
         .imm_i         (id_imm_w),

@@ -1,0 +1,2005 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat May 16 01:51:15 2026
+# Process ID         : 33092
+# Current directory  : D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent34592 D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.xpr
+# Log file           : D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/vivado.log
+# Journal file       : D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV\vivado.jou
+# Running On         : Trong_Hieu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 6600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16361 MB
+# Swap memory        : 17600 MB
+# Total Virtual      : 33961 MB
+# Available Virtual  : 6791 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 1705.695 ; gain = 248.625
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2751.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 578 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 2751.430 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3110.035 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.044 . Memory (MB): peak = 3110.035 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3130.000 ; gain = 19.965
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3130.000 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3646.293 ; gain = 516.293
+Read Physdb Files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3646.293 ; gain = 536.258
+Restored from archive | CPU: 11.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3646.293 ; gain = 536.258
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3646.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 162 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 156 instances
+
+open_run: Time (s): cpu = 00:01:06 ; elapsed = 00:00:49 . Memory (MB): peak = 4172.680 ; gain = 2457.031
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\top_module\cpu_pipeline.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\testbench\tb_riscv.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Hoc_Tap\Dai_hoc\HK6\DoAn1\Pipeline_RISCV\Pipeline_RISCV.srcs\sources_1\memory_unit\imem.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+synth_design -top tb_riscv -part xck26-sfvc784-2LV-c -lint 
+Command: synth_design -top tb_riscv -part xck26-sfvc784-2LV-c -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21440
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 4766.973 ; gain = 429.383
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-11241] undeclared symbol 'mem_d_dmemsel_w', assumed default net type 'wire' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v:401]
+INFO: [Synth 8-6157] synthesizing module 'tb_riscv' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:3]
+INFO: [Synth 8-251] ================================================== [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:56]
+INFO: [Synth 8-251]       STARTING PIPELINE CPU SIMULATION             [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:57]
+INFO: [Synth 8-251] ================================================== [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:58]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:82]
+INFO: [Synth 8-251] 
+================================================== [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:92]
+INFO: [Synth 8-251]          REGISTER FILE STATE AT FINISH             [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:93]
+INFO: [Synth 8-251] ================================================== [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:94]
+INFO: [Synth 8-6085] Hierarchical reference on 'registers_r' stops possible memory inference [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v:47]
+INFO: [Synth 8-251]  x0 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x1 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x2 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x3 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x4 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x5 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x6 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x7 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x8 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x9 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x10 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x11 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x12 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x13 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x14 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x15 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x16 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x17 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x18 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x19 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x20 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x21 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x22 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x23 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x24 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x25 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x26 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x27 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x28 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x29 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x30 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251]  x31 	 = 32'hxxxxxxxx [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:96]
+INFO: [Synth 8-251] ================================================== [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:99]
+INFO: [Synth 8-251]                  SIMULATION ENDED                  [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:100]
+INFO: [Synth 8-251] ================================================== [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:101]
+WARNING: [Synth 8-11581] system task call 'finish' not supported [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:102]
+WARNING: [Synth 8-85] always block has no event control specified [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:12]
+INFO: [Synth 8-6157] synthesizing module 'riscv' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv.v:26]
+INFO: [Synth 8-6157] synthesizing module 'cpu_pipeline' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v:18]
+INFO: [Synth 8-6157] synthesizing module 'pc' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v:27]
+INFO: [Synth 8-6157] synthesizing module 'if_id_reg' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_reg' (2#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v:25]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (3#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (4#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v:27]
+INFO: [Synth 8-6157] synthesizing module 'imme_gen' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'imme_gen' (5#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hazard_detection_unit' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_detection_unit' (6#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v:26]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_reg' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_reg' (7#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v:25]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (8#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'mux_4x1_32bit' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4x1_32bit' (9#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (10#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v:26]
+INFO: [Synth 8-6157] synthesizing module 'bj_detect' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'bj_detect' (11#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem_reg' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem_reg' (12#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v:25]
+INFO: [Synth 8-6157] synthesizing module 'store_alignment' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'store_alignment' (13#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v:26]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb_reg' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb_reg' (14#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v:25]
+INFO: [Synth 8-6157] synthesizing module 'load_alignment' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'load_alignment' (15#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v:26]
+WARNING: [Synth 8-3848] Net id_d1_bjsel_w in module/entity cpu_pipeline does not have driver. [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v:70]
+WARNING: [Synth 8-3848] Net id_d2_bjsel_w in module/entity cpu_pipeline does not have driver. [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_pipeline' (16#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v:18]
+INFO: [Synth 8-6157] synthesizing module 'imem' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v:26]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_INS bound to: 1000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'machine_code.mem' is read successfully [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (17#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v:26]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/dmem.v:26]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_WORDS bound to: 2048 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (18#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/dmem.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'riscv' (19#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'tb_riscv' (20#1) [D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:41 ; elapsed = 00:00:39 . Memory (MB): peak = 7463.129 ; gain = 3125.539
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Sat May 16 01:56:06 2026
+| Host         : Trong_Hieu running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+------------------+--------------+----------+
+| Rule ID   | Severity         | # Violations | # Waived |
++-----------+------------------+--------------+----------+
+| ASSIGN-5  | WARNING          | 20           | 0        |
+| ASSIGN-6  | WARNING          | 5            | 0        |
+| ASSIGN-9  | WARNING          | 1            | 0        |
+| ASSIGN-10 | WARNING          | 3            | 0        |
+| INFER-4   | CRITICAL WARNING | 1            | 0        |
++-----------+------------------+--------------+----------+
+
+
+WARNING: [Synth 37-123] [ASSIGN-6]Some bits in 'sub_res' are not read. First unread bit index is 0. 
+RTL Name 'sub_res', Hierarchy 'bj_detect', File 'bj_detect.v', Line 35.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'funct7_i' are not read. First unread bit index is 1. 
+RTL Name 'funct7_i', Hierarchy 'control_unit', File 'control_unit.v', Line 27.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'id_clean_rs1_addr_w' are not set. First unset bit index is 0. 
+RTL Name 'id_clean_rs1_addr_w', Hierarchy 'cpu_pipeline', File 'cpu_pipeline.v', Line 77.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'id_d1_bjsel_w' are not set. First unset bit index is 0. 
+RTL Name 'id_d1_bjsel_w', Hierarchy 'cpu_pipeline', File 'cpu_pipeline.v', Line 70.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'id_d2_bjsel_w' are not set. First unset bit index is 0. 
+RTL Name 'id_d2_bjsel_w', Hierarchy 'cpu_pipeline', File 'cpu_pipeline.v', Line 70.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'id_instr_w_orig' are not set. First unset bit index is 0. 
+RTL Name 'id_instr_w_orig', Hierarchy 'cpu_pipeline', File 'cpu_pipeline.v', Line 58.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'id_j_type_w' declared and are not set.
+RTL Name 'id_j_type_w', Hierarchy 'cpu_pipeline', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v', Line 76.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'id_u_type_w' declared and are not set.
+RTL Name 'id_u_type_w', Hierarchy 'cpu_pipeline', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v', Line 75.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'wb_cpu_halted_w' declared and are not set.
+RTL Name 'wb_cpu_halted_w', Hierarchy 'cpu_pipeline', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v', Line 128.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'ex_d1_bjsel_w' was assigned but not read. 
+RTL Name 'ex_d1_bjsel_w', Hierarchy 'cpu_pipeline', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v', Line 92.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'ex_d2_bjsel_w' was assigned but not read. 
+RTL Name 'ex_d2_bjsel_w', Hierarchy 'cpu_pipeline', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v', Line 93.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'addr_i' are not read. First unread bit index is 0. 
+RTL Name 'addr_i', Hierarchy 'dmem', File 'dmem.v', Line 33.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'addr_i' are not read. First unread bit index is 0. 
+RTL Name 'addr_i', Hierarchy 'imem', File 'imem.v', Line 32.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'ex_branch_taken_w_orig' declared and are not set.
+RTL Name 'ex_branch_taken_w_orig', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 123.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'flush_if_id_w_orig' declared and are not set.
+RTL Name 'flush_if_id_w_orig', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 120.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'fw_sel_rs1_w_orig' are not set. First unset bit index is 0. 
+RTL Name 'fw_sel_rs1_w_orig', Hierarchy 'tb_riscv', File 'tb_riscv.v', Line 126.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'fw_sel_rs2_w_orig' are not set. First unset bit index is 0. 
+RTL Name 'fw_sel_rs2_w_orig', Hierarchy 'tb_riscv', File 'tb_riscv.v', Line 126.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'id_instr_w_orig' are not set. First unset bit index is 0. 
+RTL Name 'id_instr_w_orig', Hierarchy 'tb_riscv', File 'tb_riscv.v', Line 40.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'mem_d_dmemsel_w_orig' declared and are not set.
+RTL Name 'mem_d_dmemsel_w_orig', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 134.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'mem_we_dmem_w_orig' declared and are not set.
+RTL Name 'mem_we_dmem_w_orig', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 129.
+WARNING: [Synth 37-116] [ASSIGN-5] 32 signals within array 'registers_r' are not assigned, switch to verbose mode to see all details.
+RTL Name 'registers_r', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 96.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'stall_pc_if_id_w_orig' declared and are not set.
+RTL Name 'stall_pc_if_id_w_orig', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 118.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'timeout_counter' are not set. First unset bit index is 0. 
+RTL Name 'timeout_counter', Hierarchy 'tb_riscv', File 'tb_riscv.v', Line 49.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'wb_d_wbsel_w_orig' are not set. First unset bit index is 0. 
+RTL Name 'wb_d_wbsel_w_orig', Hierarchy 'tb_riscv', File 'tb_riscv.v', Line 140.
+WARNING: [Synth 37-124] [ASSIGN-5]Some bits in 'wb_rd_w_orig' are not set. First unset bit index is 0. 
+RTL Name 'wb_rd_w_orig', Hierarchy 'tb_riscv', File 'tb_riscv.v', Line 139.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'wb_reg_write_en_w_orig' declared and are not set.
+RTL Name 'wb_reg_write_en_w_orig', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 139.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'done_o' was assigned but not read. 
+RTL Name 'done_o', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 10.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'inst_name_r' was assigned but not read. 
+RTL Name 'inst_name_r', Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 24.
+WARNING: [Synth 37-126] [ASSIGN-9]Some bits in IO 'done_o_orig' are not set. First unset bit index is 0. 
+RTL Name 'done_o_orig', Hierarchy 'tb_riscv', File 'tb_riscv.v', Line 77.
+CRITICAL WARNING: [Synth 37-113] [INFER-4]Combination loop detected on 'clk_i' at '0' bit. 
+Hierarchy 'tb_riscv', File 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v', Line 8.
+INFO: [Synth 37-85] Total of 30 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:39 . Memory (MB): peak = 7463.129 ; gain = 3125.539
+INFO: [Common 17-83] Releasing license: Synthesis
+91 Infos, 34 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:39 . Memory (MB): peak = 7463.129 ; gain = 3125.539
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2025.1/Vivado/data/xsim/xsim.ini' copied to run dir:'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_3.mem'
+INFO: [SIM-utils-43] Exported 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_21 -L smartconnect_v1_0 -L zynq_ultra_ps_e_vip_v1_0_21 -L xilinx_vip -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/encoding.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/bj_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bj_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/cpu_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/ex_mem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/control_unit/hazard_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/id_ex_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/if_id_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/imme_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imme_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/load_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/pipeline_register/mem_wb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/utils/mux_4x1_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4x1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/functional_unit/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/top_module/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/memory_unit/store_alignment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_alignment
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.if_id_reg
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.reg_file_default
+Compiling module xil_defaultlib.imme_gen
+Compiling module xil_defaultlib.hazard_detection_unit
+Compiling module xil_defaultlib.id_ex_reg
+Compiling module xil_defaultlib.forwarding_unit
+Compiling module xil_defaultlib.mux_4x1_32bit
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.bj_detect
+Compiling module xil_defaultlib.ex_mem_reg
+Compiling module xil_defaultlib.store_alignment
+Compiling module xil_defaultlib.mem_wb_reg
+Compiling module xil_defaultlib.load_alignment
+Compiling module xil_defaultlib.cpu_pipeline
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -protoinst "protoinst_files/bd_ae83.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_ae83.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_ae83.protoinst for the following reason(s):
+There are no instances of module "bd_ae83" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+==================================================
+      STARTING PIPELINE CPU SIMULATION            
+==================================================
+Time: 50000 | PC = 0x00000000 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 60000 | PC = 0x00000000 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 70000 | PC = 0x00000004 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 80000 | PC = 0x00000008 | Inst = 0x00000000 (BUBBLE)
+-----------------------------------------------------------------
+Time: 90000 | PC = 0x0000000c | Inst = 0x00200193 (ALU-I )
+-----------------------------------------------------------------
+Time: 100000 | PC = 0x00000010 | Inst = 0x00000593 (ALU-I )
+-----------------------------------------------------------------
+Time: 110000 | PC = 0x00000014 | Inst = 0x00000613 (ALU-I )
+-----------------------------------------------------------------
+Time: 120000 | PC = 0x00000018 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x00000002
+-----------------------------------------------------------------
+Time: 130000 | PC = 0x0000001c | Inst = 0x00000393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x00000000
+-----------------------------------------------------------------
+Time: 140000 | PC = 0x00000020 | Inst = 0x4c771663 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x00000000
+-----------------------------------------------------------------
+Time: 150000 | PC = 0x00000024 | Inst = 0x00300193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0x00000000
+-----------------------------------------------------------------
+Time: 160000 | PC = 0x00000028 | Inst = 0x00100593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000000
+-----------------------------------------------------------------
+Time: 170000 | PC = 0x0000002c | Inst = 0x00100613 (ALU-I )
+-----------------------------------------------------------------
+Time: 180000 | PC = 0x00000030 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x00000003
+-----------------------------------------------------------------
+Time: 190000 | PC = 0x00000034 | Inst = 0x00200393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x00000001
+-----------------------------------------------------------------
+Time: 200000 | PC = 0x00000038 | Inst = 0x4a771a63 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x00000001
+-----------------------------------------------------------------
+Time: 210000 | PC = 0x0000003c | Inst = 0x00400193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0x00000002
+-----------------------------------------------------------------
+Time: 220000 | PC = 0x00000040 | Inst = 0x00300593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000002
+-----------------------------------------------------------------
+Time: 230000 | PC = 0x00000044 | Inst = 0x00700613 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 240000 | PC = 0x00000048 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x00000004
+-----------------------------------------------------------------
+Time: 250000 | PC = 0x0000004c | Inst = 0x00a00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x00000003
+-----------------------------------------------------------------
+Time: 260000 | PC = 0x00000050 | Inst = 0x48771e63 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x00000007
+-----------------------------------------------------------------
+Time: 270000 | PC = 0x00000054 | Inst = 0x00500193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0x0000000a
+-----------------------------------------------------------------
+Time: 280000 | PC = 0x00000058 | Inst = 0x00000593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000000a
+-----------------------------------------------------------------
+Time: 290000 | PC = 0x0000005c | Inst = 0xffff8637 (LUI   )
+-----------------------------------------------------------------
+Time: 300000 | PC = 0x00000060 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x00000005
+-----------------------------------------------------------------
+Time: 310000 | PC = 0x00000064 | Inst = 0xffff83b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x00000000
+-----------------------------------------------------------------
+Time: 320000 | PC = 0x00000068 | Inst = 0x48771263 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0xffff8000
+-----------------------------------------------------------------
+Time: 330000 | PC = 0x0000006c | Inst = 0x00600193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0xffff8000
+-----------------------------------------------------------------
+Time: 340000 | PC = 0x00000070 | Inst = 0x800005b7 (LUI   )
+          -> [WB]  WRITE REG | x7 <- 0xffff8000
+-----------------------------------------------------------------
+Time: 350000 | PC = 0x00000074 | Inst = 0x00000613 (ALU-I )
+-----------------------------------------------------------------
+Time: 360000 | PC = 0x00000078 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x00000006
+-----------------------------------------------------------------
+Time: 370000 | PC = 0x0000007c | Inst = 0x800003b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x80000000
+-----------------------------------------------------------------
+Time: 380000 | PC = 0x00000080 | Inst = 0x46771663 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x00000000
+-----------------------------------------------------------------
+Time: 390000 | PC = 0x00000084 | Inst = 0x00700193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0x80000000
+-----------------------------------------------------------------
+Time: 400000 | PC = 0x00000088 | Inst = 0x800005b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x7 <- 0x80000000
+-----------------------------------------------------------------
+Time: 410000 | PC = 0x0000008c | Inst = 0xffff8637 (LUI   )
+-----------------------------------------------------------------
+Time: 420000 | PC = 0x00000090 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x00000007
+-----------------------------------------------------------------
+Time: 430000 | PC = 0x00000094 | Inst = 0x7fff83b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x80000000
+-----------------------------------------------------------------
+Time: 440000 | PC = 0x00000098 | Inst = 0x44771a63 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0xffff8000
+-----------------------------------------------------------------
+Time: 450000 | PC = 0x0000009c | Inst = 0x00800193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0x7fff8000
+-----------------------------------------------------------------
+Time: 460000 | PC = 0x000000a0 | Inst = 0x00000593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x7fff8000
+-----------------------------------------------------------------
+Time: 470000 | PC = 0x000000a4 | Inst = 0x00008637 (LUI   )
+-----------------------------------------------------------------
+Time: 480000 | PC = 0x000000a8 | Inst = 0xfff60613 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000008
+-----------------------------------------------------------------
+Time: 490000 | PC = 0x000000ac | Inst = 0x00c58733 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x11 <- 0x00000000
+-----------------------------------------------------------------
+Time: 500000 | PC = 0x000000b0 | Inst = 0x000083b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x12 <- 0x00008000
+-----------------------------------------------------------------
+Time: 510000 | PC = 0x000000b4 | Inst = 0xfff38393 (ALU-I )
+          -> [WB]  WRITE REG | x12 <- 0x00007fff
+-----------------------------------------------------------------
+Time: 520000 | PC = 0x000000b8 | Inst = 0x42771a63 (BRANCH)
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x14 <- 0x00007fff
+-----------------------------------------------------------------
+Time: 530000 | PC = 0x000000bc | Inst = 0x00900193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x7 <- 0x00008000
+-----------------------------------------------------------------
+Time: 540000 | PC = 0x000000c0 | Inst = 0x800005b7 (LUI   )
+          -> [WB]  WRITE REG | x7 <- 0x00007fff
+-----------------------------------------------------------------
+Time: 550000 | PC = 0x000000c4 | Inst = 0xfff58593 (ALU-I )
+-----------------------------------------------------------------
+Time: 560000 | PC = 0x000000c8 | Inst = 0x00000613 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x3 <- 0x00000009
+-----------------------------------------------------------------
+Time: 570000 | PC = 0x000000cc | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x11 <- 0x80000000
+-----------------------------------------------------------------
+Time: 580000 | PC = 0x000000d0 | Inst = 0x800003b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x7fffffff
+-----------------------------------------------------------------
+Time: 590000 | PC = 0x000000d4 | Inst = 0xfff38393 (ALU-I )
+          -> [WB]  WRITE REG | x12 <- 0x00000000
+-----------------------------------------------------------------
+Time: 600000 | PC = 0x000000d8 | Inst = 0x40771a63 (BRANCH)
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x14 <- 0x7fffffff
+-----------------------------------------------------------------
+Time: 610000 | PC = 0x000000dc | Inst = 0x00a00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x7 <- 0x80000000
+-----------------------------------------------------------------
+Time: 620000 | PC = 0x000000e0 | Inst = 0x800005b7 (LUI   )
+          -> [WB]  WRITE REG | x7 <- 0x7fffffff
+-----------------------------------------------------------------
+Time: 630000 | PC = 0x000000e4 | Inst = 0xfff58593 (ALU-I )
+-----------------------------------------------------------------
+Time: 640000 | PC = 0x000000e8 | Inst = 0x00008637 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x3 <- 0x0000000a
+-----------------------------------------------------------------
+Time: 650000 | PC = 0x000000ec | Inst = 0xfff60613 (ALU-I )
+          -> [WB]  WRITE REG | x11 <- 0x80000000
+-----------------------------------------------------------------
+Time: 660000 | PC = 0x000000f0 | Inst = 0x00c58733 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x11 <- 0x7fffffff
+-----------------------------------------------------------------
+Time: 670000 | PC = 0x000000f4 | Inst = 0x800083b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x12 <- 0x00008000
+-----------------------------------------------------------------
+Time: 680000 | PC = 0x000000f8 | Inst = 0xffe38393 (ALU-I )
+          -> [WB]  WRITE REG | x12 <- 0x00007fff
+-----------------------------------------------------------------
+Time: 690000 | PC = 0x000000fc | Inst = 0x3e771863 (BRANCH)
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x14 <- 0x80007ffe
+-----------------------------------------------------------------
+Time: 700000 | PC = 0x00000100 | Inst = 0x00b00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x7 <- 0x80008000
+-----------------------------------------------------------------
+Time: 710000 | PC = 0x00000104 | Inst = 0x800005b7 (LUI   )
+          -> [WB]  WRITE REG | x7 <- 0x80007ffe
+-----------------------------------------------------------------
+Time: 720000 | PC = 0x00000108 | Inst = 0x00008637 (LUI   )
+-----------------------------------------------------------------
+Time: 730000 | PC = 0x0000010c | Inst = 0xfff60613 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 740000 | PC = 0x00000110 | Inst = 0x00c58733 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x11 <- 0x80000000
+-----------------------------------------------------------------
+Time: 750000 | PC = 0x00000114 | Inst = 0x800083b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x12 <- 0x00008000
+-----------------------------------------------------------------
+Time: 760000 | PC = 0x00000118 | Inst = 0xfff38393 (ALU-I )
+          -> [WB]  WRITE REG | x12 <- 0x00007fff
+-----------------------------------------------------------------
+Time: 770000 | PC = 0x0000011c | Inst = 0x3c771863 (BRANCH)
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x14 <- 0x80007fff
+-----------------------------------------------------------------
+Time: 780000 | PC = 0x00000120 | Inst = 0x00c00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x7 <- 0x80008000
+-----------------------------------------------------------------
+Time: 790000 | PC = 0x00000124 | Inst = 0x800005b7 (LUI   )
+          -> [WB]  WRITE REG | x7 <- 0x80007fff
+-----------------------------------------------------------------
+Time: 800000 | PC = 0x00000128 | Inst = 0xfff58593 (ALU-I )
+-----------------------------------------------------------------
+Time: 810000 | PC = 0x0000012c | Inst = 0xffff8637 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x3 <- 0x0000000c
+-----------------------------------------------------------------
+Time: 820000 | PC = 0x00000130 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x11 <- 0x80000000
+-----------------------------------------------------------------
+Time: 830000 | PC = 0x00000134 | Inst = 0x7fff83b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x7fffffff
+-----------------------------------------------------------------
+Time: 840000 | PC = 0x00000138 | Inst = 0xfff38393 (ALU-I )
+          -> [WB]  WRITE REG | x12 <- 0xffff8000
+-----------------------------------------------------------------
+Time: 850000 | PC = 0x0000013c | Inst = 0x3a771863 (BRANCH)
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x14 <- 0x7fff7fff
+-----------------------------------------------------------------
+Time: 860000 | PC = 0x00000140 | Inst = 0x00d00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x7 <- 0x7fff8000
+-----------------------------------------------------------------
+Time: 870000 | PC = 0x00000144 | Inst = 0x00000593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x7fff7fff
+-----------------------------------------------------------------
+Time: 880000 | PC = 0x00000148 | Inst = 0xfff00613 (ALU-I )
+-----------------------------------------------------------------
+Time: 890000 | PC = 0x0000014c | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 900000 | PC = 0x00000150 | Inst = 0xfff00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x00000000
+-----------------------------------------------------------------
+Time: 910000 | PC = 0x00000154 | Inst = 0x38771c63 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0xffffffff
+-----------------------------------------------------------------
+Time: 920000 | PC = 0x00000158 | Inst = 0x00e00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0xffffffff
+-----------------------------------------------------------------
+Time: 930000 | PC = 0x0000015c | Inst = 0xfff00593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0xffffffff
+-----------------------------------------------------------------
+Time: 940000 | PC = 0x00000160 | Inst = 0x00100613 (ALU-I )
+-----------------------------------------------------------------
+Time: 950000 | PC = 0x00000164 | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 960000 | PC = 0x00000168 | Inst = 0x00000393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0xffffffff
+-----------------------------------------------------------------
+Time: 970000 | PC = 0x0000016c | Inst = 0x38771063 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x00000001
+-----------------------------------------------------------------
+Time: 980000 | PC = 0x00000170 | Inst = 0x00f00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0x00000000
+-----------------------------------------------------------------
+Time: 990000 | PC = 0x00000174 | Inst = 0xfff00593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000000
+-----------------------------------------------------------------
+Time: 1000000 | PC = 0x00000178 | Inst = 0xfff00613 (ALU-I )
+-----------------------------------------------------------------
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 7463.129 ; gain = 0.000
+run 10000 ns
+Time: 1010000 | PC = 0x0000017c | Inst = 0x00c58733 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 1020000 | PC = 0x00000180 | Inst = 0xffe00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0xffffffff
+-----------------------------------------------------------------
+Time: 1030000 | PC = 0x00000184 | Inst = 0x36771463 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0xffffffff
+-----------------------------------------------------------------
+Time: 1040000 | PC = 0x00000188 | Inst = 0x01000193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0xfffffffe
+-----------------------------------------------------------------
+Time: 1050000 | PC = 0x0000018c | Inst = 0x00100593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0xfffffffe
+-----------------------------------------------------------------
+Time: 1060000 | PC = 0x00000190 | Inst = 0x80000637 (LUI   )
+-----------------------------------------------------------------
+Time: 1070000 | PC = 0x00000194 | Inst = 0xfff60613 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000010
+-----------------------------------------------------------------
+Time: 1080000 | PC = 0x00000198 | Inst = 0x00c58733 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x11 <- 0x00000001
+-----------------------------------------------------------------
+Time: 1090000 | PC = 0x0000019c | Inst = 0x800003b7 (LUI   )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x12 <- 0x80000000
+-----------------------------------------------------------------
+Time: 1100000 | PC = 0x000001a0 | Inst = 0x34771663 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x7fffffff
+-----------------------------------------------------------------
+Time: 1110000 | PC = 0x000001a4 | Inst = 0x01100193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x14 <- 0x80000000
+-----------------------------------------------------------------
+Time: 1120000 | PC = 0x000001a8 | Inst = 0x00d00593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x80000000
+-----------------------------------------------------------------
+Time: 1130000 | PC = 0x000001ac | Inst = 0x00b00613 (ALU-I )
+-----------------------------------------------------------------
+Time: 1140000 | PC = 0x000001b0 | Inst = 0x00c585b3 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x3 <- 0x00000011
+-----------------------------------------------------------------
+Time: 1150000 | PC = 0x000001b4 | Inst = 0x01800393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 1160000 | PC = 0x000001b8 | Inst = 0x32759a63 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1170000 | PC = 0x000001bc | Inst = 0x01200193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x00000018
+-----------------------------------------------------------------
+Time: 1180000 | PC = 0x000001c0 | Inst = 0x00e00593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000018
+-----------------------------------------------------------------
+Time: 1190000 | PC = 0x000001c4 | Inst = 0x00b00613 (ALU-I )
+-----------------------------------------------------------------
+Time: 1200000 | PC = 0x000001c8 | Inst = 0x00c58633 (ALU-R )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x3 <- 0x00000012
+-----------------------------------------------------------------
+Time: 1210000 | PC = 0x000001cc | Inst = 0x01900393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 1220000 | PC = 0x000001d0 | Inst = 0x30761e63 (BRANCH)
+          -> [WB]  WRITE REG | x12 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1230000 | PC = 0x000001d4 | Inst = 0x01300193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x12 <- 0x00000019
+-----------------------------------------------------------------
+Time: 1240000 | PC = 0x000001d8 | Inst = 0x00d00593 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000019
+-----------------------------------------------------------------
+Time: 1250000 | PC = 0x000001dc | Inst = 0x00b585b3 (ALU-R )
+-----------------------------------------------------------------
+Time: 1260000 | PC = 0x000001e0 | Inst = 0x01a00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 01
+          -> [WB]  WRITE REG | x3 <- 0x00000013
+-----------------------------------------------------------------
+Time: 1270000 | PC = 0x000001e4 | Inst = 0x30759463 (BRANCH)
+          -> [WB]  WRITE REG | x11 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 1280000 | PC = 0x000001e8 | Inst = 0x01400193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x11 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 1290000 | PC = 0x000001ec | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 1300000 | PC = 0x000001f0 | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 1310000 | PC = 0x000001f4 | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000014
+-----------------------------------------------------------------
+Time: 1320000 | PC = 0x000001f8 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 1330000 | PC = 0x000001fc | Inst = 0x00070313 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 1340000 | PC = 0x00000200 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1350000 | PC = 0x00000204 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 1360000 | PC = 0x00000208 | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x6 <- 0x00000018
+-----------------------------------------------------------------
+Time: 1370000 | PC = 0x0000020c | Inst = 0x01800393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x000001f0
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 1380000 | PC = 0x00000000 | Inst = 0x2c731e63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1390000 | PC = 0x000001f0 | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 1400000 | PC = 0x000001f4 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 1410000 | PC = 0x000001f8 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 1420000 | PC = 0x000001fc | Inst = 0x00070313 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 1430000 | PC = 0x00000200 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1440000 | PC = 0x00000204 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 1450000 | PC = 0x00000208 | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x6 <- 0x00000018
+-----------------------------------------------------------------
+Time: 1460000 | PC = 0x0000020c | Inst = 0x01800393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1470000 | PC = 0x00000210 | Inst = 0x2c731e63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1480000 | PC = 0x00000214 | Inst = 0x01500193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 1490000 | PC = 0x00000218 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000018
+-----------------------------------------------------------------
+Time: 1500000 | PC = 0x0000021c | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 1510000 | PC = 0x00000220 | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000015
+-----------------------------------------------------------------
+Time: 1520000 | PC = 0x00000224 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 1530000 | PC = 0x00000228 | Inst = 0x00000013 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 1540000 | PC = 0x0000022c | Inst = 0x00070313 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1550000 | PC = 0x00000230 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 1560000 | PC = 0x00000234 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 1570000 | PC = 0x00000238 | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x6 <- 0x00000019
+-----------------------------------------------------------------
+Time: 1580000 | PC = 0x0000023c | Inst = 0x01900393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x0000021c
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 1590000 | PC = 0x00000000 | Inst = 0x2a731663 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1600000 | PC = 0x0000021c | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 1610000 | PC = 0x00000220 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 1620000 | PC = 0x00000224 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 1630000 | PC = 0x00000228 | Inst = 0x00000013 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 1640000 | PC = 0x0000022c | Inst = 0x00070313 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1650000 | PC = 0x00000230 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 1660000 | PC = 0x00000234 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 1670000 | PC = 0x00000238 | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x6 <- 0x00000019
+-----------------------------------------------------------------
+Time: 1680000 | PC = 0x0000023c | Inst = 0x01900393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1690000 | PC = 0x00000240 | Inst = 0x2a731663 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1700000 | PC = 0x00000244 | Inst = 0x01600193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 1710000 | PC = 0x00000248 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000019
+-----------------------------------------------------------------
+Time: 1720000 | PC = 0x0000024c | Inst = 0x00f00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 1730000 | PC = 0x00000250 | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000016
+-----------------------------------------------------------------
+Time: 1740000 | PC = 0x00000254 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 1750000 | PC = 0x00000258 | Inst = 0x00000013 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 1760000 | PC = 0x0000025c | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1770000 | PC = 0x00000260 | Inst = 0x00070313 (ALU-I )
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 1780000 | PC = 0x00000264 | Inst = 0x00120213 (ALU-I )
+-----------------------------------------------------------------
+Time: 1790000 | PC = 0x00000268 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 1800000 | PC = 0x0000026c | Inst = 0xfe5210e3 (BRANCH)
+          -> [WB]  WRITE REG | x6 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 1810000 | PC = 0x00000270 | Inst = 0x01a00393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x0000024c
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 1820000 | PC = 0x00000000 | Inst = 0x26731c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1830000 | PC = 0x0000024c | Inst = 0x00f00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 1840000 | PC = 0x00000250 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 1850000 | PC = 0x00000254 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 1860000 | PC = 0x00000258 | Inst = 0x00000013 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 1870000 | PC = 0x0000025c | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 1880000 | PC = 0x00000260 | Inst = 0x00070313 (ALU-I )
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 1890000 | PC = 0x00000264 | Inst = 0x00120213 (ALU-I )
+-----------------------------------------------------------------
+Time: 1900000 | PC = 0x00000268 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 1910000 | PC = 0x0000026c | Inst = 0xfe5210e3 (BRANCH)
+          -> [WB]  WRITE REG | x6 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 1920000 | PC = 0x00000270 | Inst = 0x01a00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1930000 | PC = 0x00000274 | Inst = 0x26731c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 1940000 | PC = 0x00000278 | Inst = 0x01700193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 1950000 | PC = 0x0000027c | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 1960000 | PC = 0x00000280 | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 1970000 | PC = 0x00000284 | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000017
+-----------------------------------------------------------------
+Time: 1980000 | PC = 0x00000288 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 1990000 | PC = 0x0000028c | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 2000000 | PC = 0x00000290 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2010000 | PC = 0x00000294 | Inst = 0xfe5216e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 2020000 | PC = 0x00000298 | Inst = 0x01800393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000280
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 2030000 | PC = 0x00000000 | Inst = 0x24771863 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2040000 | PC = 0x00000280 | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2050000 | PC = 0x00000284 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 2060000 | PC = 0x00000288 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 2070000 | PC = 0x0000028c | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 2080000 | PC = 0x00000290 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2090000 | PC = 0x00000294 | Inst = 0xfe5216e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 2100000 | PC = 0x00000298 | Inst = 0x01800393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2110000 | PC = 0x0000029c | Inst = 0x24771863 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2120000 | PC = 0x000002a0 | Inst = 0x01800193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 2130000 | PC = 0x000002a4 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000018
+-----------------------------------------------------------------
+Time: 2140000 | PC = 0x000002a8 | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2150000 | PC = 0x000002ac | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000018
+-----------------------------------------------------------------
+Time: 2160000 | PC = 0x000002b0 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 2170000 | PC = 0x000002b4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 2180000 | PC = 0x000002b8 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2190000 | PC = 0x000002bc | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 2200000 | PC = 0x000002c0 | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 2210000 | PC = 0x000002c4 | Inst = 0x01900393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x000002a8
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 2220000 | PC = 0x00000000 | Inst = 0x22771263 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2230000 | PC = 0x000002a8 | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2240000 | PC = 0x000002ac | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 2250000 | PC = 0x000002b0 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 2260000 | PC = 0x000002b4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 2270000 | PC = 0x000002b8 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2280000 | PC = 0x000002bc | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 2290000 | PC = 0x000002c0 | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 2300000 | PC = 0x000002c4 | Inst = 0x01900393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2310000 | PC = 0x000002c8 | Inst = 0x22771263 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2320000 | PC = 0x000002cc | Inst = 0x01900193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 2330000 | PC = 0x000002d0 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000019
+-----------------------------------------------------------------
+Time: 2340000 | PC = 0x000002d4 | Inst = 0x00f00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2350000 | PC = 0x000002d8 | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000019
+-----------------------------------------------------------------
+Time: 2360000 | PC = 0x000002dc | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 2370000 | PC = 0x000002e0 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 2380000 | PC = 0x000002e4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2390000 | PC = 0x000002e8 | Inst = 0x00120213 (ALU-I )
+-----------------------------------------------------------------
+Time: 2400000 | PC = 0x000002ec | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 2410000 | PC = 0x000002f0 | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 2420000 | PC = 0x000002f4 | Inst = 0x01a00393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x000002d4
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 2430000 | PC = 0x00000000 | Inst = 0x1e771a63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2440000 | PC = 0x000002d4 | Inst = 0x00f00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2450000 | PC = 0x000002d8 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 2460000 | PC = 0x000002dc | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 2470000 | PC = 0x000002e0 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 2480000 | PC = 0x000002e4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2490000 | PC = 0x000002e8 | Inst = 0x00120213 (ALU-I )
+-----------------------------------------------------------------
+Time: 2500000 | PC = 0x000002ec | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 2510000 | PC = 0x000002f0 | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 2520000 | PC = 0x000002f4 | Inst = 0x01a00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2530000 | PC = 0x000002f8 | Inst = 0x1e771a63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2540000 | PC = 0x000002fc | Inst = 0x01a00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 2550000 | PC = 0x00000300 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 2560000 | PC = 0x00000304 | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2570000 | PC = 0x00000308 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 2580000 | PC = 0x0000030c | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 2590000 | PC = 0x00000310 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 2600000 | PC = 0x00000314 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 2610000 | PC = 0x00000318 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2620000 | PC = 0x0000031c | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 2630000 | PC = 0x00000320 | Inst = 0x01800393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000304
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 2640000 | PC = 0x00000000 | Inst = 0x1c771463 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2650000 | PC = 0x00000304 | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2660000 | PC = 0x00000308 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 2670000 | PC = 0x0000030c | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 2680000 | PC = 0x00000310 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 2690000 | PC = 0x00000314 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 2700000 | PC = 0x00000318 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2710000 | PC = 0x0000031c | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 2720000 | PC = 0x00000320 | Inst = 0x01800393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2730000 | PC = 0x00000324 | Inst = 0x1c771463 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2740000 | PC = 0x00000328 | Inst = 0x01b00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 2750000 | PC = 0x0000032c | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000018
+-----------------------------------------------------------------
+Time: 2760000 | PC = 0x00000330 | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2770000 | PC = 0x00000334 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x0000001b
+-----------------------------------------------------------------
+Time: 2780000 | PC = 0x00000338 | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 2790000 | PC = 0x0000033c | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 2800000 | PC = 0x00000340 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 2810000 | PC = 0x00000344 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2820000 | PC = 0x00000348 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 2830000 | PC = 0x0000034c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 2840000 | PC = 0x00000350 | Inst = 0x01900393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000330
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 2850000 | PC = 0x00000000 | Inst = 0x18771c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2860000 | PC = 0x00000330 | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2870000 | PC = 0x00000334 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 2880000 | PC = 0x00000338 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 2890000 | PC = 0x0000033c | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 2900000 | PC = 0x00000340 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 2910000 | PC = 0x00000344 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 2920000 | PC = 0x00000348 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 2930000 | PC = 0x0000034c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 2940000 | PC = 0x00000350 | Inst = 0x01900393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2950000 | PC = 0x00000354 | Inst = 0x18771c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 2960000 | PC = 0x00000358 | Inst = 0x01c00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 2970000 | PC = 0x0000035c | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000019
+-----------------------------------------------------------------
+Time: 2980000 | PC = 0x00000360 | Inst = 0x00f00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 2990000 | PC = 0x00000364 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x0000001c
+-----------------------------------------------------------------
+Time: 3000000 | PC = 0x00000368 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 3010000 | PC = 0x0000036c | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 3020000 | PC = 0x00000370 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 3030000 | PC = 0x00000374 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 3040000 | PC = 0x00000378 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3050000 | PC = 0x0000037c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 3060000 | PC = 0x00000380 | Inst = 0x01a00393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000360
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 3070000 | PC = 0x00000000 | Inst = 0x16771463 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3080000 | PC = 0x00000360 | Inst = 0x00f00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 3090000 | PC = 0x00000364 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 3100000 | PC = 0x00000368 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 3110000 | PC = 0x0000036c | Inst = 0x00b00113 (ALU-I )
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 3120000 | PC = 0x00000370 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 3130000 | PC = 0x00000374 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 3140000 | PC = 0x00000378 | Inst = 0x00200293 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3150000 | PC = 0x0000037c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 3160000 | PC = 0x00000380 | Inst = 0x01a00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3170000 | PC = 0x00000384 | Inst = 0x16771463 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3180000 | PC = 0x00000388 | Inst = 0x01d00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 3190000 | PC = 0x0000038c | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 3200000 | PC = 0x00000390 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3210000 | PC = 0x00000394 | Inst = 0x00d00093 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x0000001d
+-----------------------------------------------------------------
+Time: 3220000 | PC = 0x00000398 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 3230000 | PC = 0x0000039c | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 10
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3240000 | PC = 0x000003a0 | Inst = 0x00200293 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 3250000 | PC = 0x000003a4 | Inst = 0xfe5216e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 3260000 | PC = 0x000003a8 | Inst = 0x01800393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000390
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 3270000 | PC = 0x00000000 | Inst = 0x14771063 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3280000 | PC = 0x00000390 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3290000 | PC = 0x00000394 | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 3300000 | PC = 0x00000398 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 3310000 | PC = 0x0000039c | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 10
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3320000 | PC = 0x000003a0 | Inst = 0x00200293 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 3330000 | PC = 0x000003a4 | Inst = 0xfe5216e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 3340000 | PC = 0x000003a8 | Inst = 0x01800393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3350000 | PC = 0x000003ac | Inst = 0x14771063 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3360000 | PC = 0x000003b0 | Inst = 0x01e00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 3370000 | PC = 0x000003b4 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000018
+-----------------------------------------------------------------
+Time: 3380000 | PC = 0x000003b8 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3390000 | PC = 0x000003bc | Inst = 0x00e00093 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x0000001e
+-----------------------------------------------------------------
+Time: 3400000 | PC = 0x000003c0 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 3410000 | PC = 0x000003c4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3420000 | PC = 0x000003c8 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 3430000 | PC = 0x000003cc | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 3440000 | PC = 0x000003d0 | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 3450000 | PC = 0x000003d4 | Inst = 0x01900393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x000003b8
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 3460000 | PC = 0x00000000 | Inst = 0x10771a63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3470000 | PC = 0x000003b8 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3480000 | PC = 0x000003bc | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 3490000 | PC = 0x000003c0 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 3500000 | PC = 0x000003c4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3510000 | PC = 0x000003c8 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 3520000 | PC = 0x000003cc | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 3530000 | PC = 0x000003d0 | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 3540000 | PC = 0x000003d4 | Inst = 0x01900393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3550000 | PC = 0x000003d8 | Inst = 0x10771a63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3560000 | PC = 0x000003dc | Inst = 0x01f00193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 3570000 | PC = 0x000003e0 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000019
+-----------------------------------------------------------------
+Time: 3580000 | PC = 0x000003e4 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3590000 | PC = 0x000003e8 | Inst = 0x00f00093 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x0000001f
+-----------------------------------------------------------------
+Time: 3600000 | PC = 0x000003ec | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 3610000 | PC = 0x000003f0 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3620000 | PC = 0x000003f4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 3630000 | PC = 0x000003f8 | Inst = 0x00120213 (ALU-I )
+-----------------------------------------------------------------
+Time: 3640000 | PC = 0x000003fc | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 3650000 | PC = 0x00000400 | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 3660000 | PC = 0x00000404 | Inst = 0x01a00393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x000003e4
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 3670000 | PC = 0x00000000 | Inst = 0x0e771263 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3680000 | PC = 0x000003e4 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3690000 | PC = 0x000003e8 | Inst = 0x00f00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 3700000 | PC = 0x000003ec | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 3710000 | PC = 0x000003f0 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3720000 | PC = 0x000003f4 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 3730000 | PC = 0x000003f8 | Inst = 0x00120213 (ALU-I )
+-----------------------------------------------------------------
+Time: 3740000 | PC = 0x000003fc | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 3750000 | PC = 0x00000400 | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 3760000 | PC = 0x00000404 | Inst = 0x01a00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3770000 | PC = 0x00000408 | Inst = 0x0e771263 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3780000 | PC = 0x0000040c | Inst = 0x02000193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 3790000 | PC = 0x00000410 | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 3800000 | PC = 0x00000414 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3810000 | PC = 0x00000418 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000020
+-----------------------------------------------------------------
+Time: 3820000 | PC = 0x0000041c | Inst = 0x00d00093 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 3830000 | PC = 0x00000420 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3840000 | PC = 0x00000424 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+-----------------------------------------------------------------
+Time: 3850000 | PC = 0x00000428 | Inst = 0x00200293 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 3860000 | PC = 0x0000042c | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 3870000 | PC = 0x00000430 | Inst = 0x01800393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000414
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 3880000 | PC = 0x00000000 | Inst = 0x0a771c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3890000 | PC = 0x00000414 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 3900000 | PC = 0x00000418 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 3910000 | PC = 0x0000041c | Inst = 0x00d00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 3920000 | PC = 0x00000420 | Inst = 0x00208733 (ALU-R )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 3930000 | PC = 0x00000424 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+-----------------------------------------------------------------
+Time: 3940000 | PC = 0x00000428 | Inst = 0x00200293 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x1 <- 0x0000000d
+-----------------------------------------------------------------
+Time: 3950000 | PC = 0x0000042c | Inst = 0xfe5214e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000018
+-----------------------------------------------------------------
+Time: 3960000 | PC = 0x00000430 | Inst = 0x01800393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3970000 | PC = 0x00000434 | Inst = 0x0a771c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 3980000 | PC = 0x00000438 | Inst = 0x02100193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 3990000 | PC = 0x0000043c | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000018
+-----------------------------------------------------------------
+Time: 4000000 | PC = 0x00000440 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 4010000 | PC = 0x00000444 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000021
+-----------------------------------------------------------------
+Time: 4020000 | PC = 0x00000448 | Inst = 0x00e00093 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 4030000 | PC = 0x0000044c | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 4040000 | PC = 0x00000450 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 4050000 | PC = 0x00000454 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 4060000 | PC = 0x00000458 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 4070000 | PC = 0x0000045c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 4080000 | PC = 0x00000460 | Inst = 0x01900393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000440
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 4090000 | PC = 0x00000000 | Inst = 0x08771463 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 4100000 | PC = 0x00000440 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 4110000 | PC = 0x00000444 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 4120000 | PC = 0x00000448 | Inst = 0x00e00093 (ALU-I )
+-----------------------------------------------------------------
+Time: 4130000 | PC = 0x0000044c | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 4140000 | PC = 0x00000450 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 4150000 | PC = 0x00000454 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 00
+          -> [WB]  WRITE REG | x1 <- 0x0000000e
+-----------------------------------------------------------------
+Time: 4160000 | PC = 0x00000458 | Inst = 0x00200293 (ALU-I )
+-----------------------------------------------------------------
+Time: 4170000 | PC = 0x0000045c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x00000019
+-----------------------------------------------------------------
+Time: 4180000 | PC = 0x00000460 | Inst = 0x01900393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 4190000 | PC = 0x00000464 | Inst = 0x08771463 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 4200000 | PC = 0x00000468 | Inst = 0x02200193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 4210000 | PC = 0x0000046c | Inst = 0x00000213 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000019
+-----------------------------------------------------------------
+Time: 4220000 | PC = 0x00000470 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 4230000 | PC = 0x00000474 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x3 <- 0x00000022
+-----------------------------------------------------------------
+Time: 4240000 | PC = 0x00000478 | Inst = 0x00000013 (ALU-I )
+          -> [WB]  WRITE REG | x4 <- 0x00000000
+-----------------------------------------------------------------
+Time: 4250000 | PC = 0x0000047c | Inst = 0x00f00093 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 4260000 | PC = 0x00000480 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 4270000 | PC = 0x00000484 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+-----------------------------------------------------------------
+Time: 4280000 | PC = 0x00000488 | Inst = 0x00200293 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 4290000 | PC = 0x0000048c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 4300000 | PC = 0x00000490 | Inst = 0x01a00393 (ALU-I )
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000470
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000001
+-----------------------------------------------------------------
+Time: 4310000 | PC = 0x00000000 | Inst = 0x04771c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 4320000 | PC = 0x00000470 | Inst = 0x00b00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 4330000 | PC = 0x00000474 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 4340000 | PC = 0x00000478 | Inst = 0x00000013 (ALU-I )
+-----------------------------------------------------------------
+Time: 4350000 | PC = 0x0000047c | Inst = 0x00f00093 (ALU-I )
+          -> [WB]  WRITE REG | x2 <- 0x0000000b
+-----------------------------------------------------------------
+Time: 4360000 | PC = 0x00000480 | Inst = 0x00208733 (ALU-R )
+-----------------------------------------------------------------
+Time: 4370000 | PC = 0x00000484 | Inst = 0x00120213 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+-----------------------------------------------------------------
+Time: 4380000 | PC = 0x00000488 | Inst = 0x00200293 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 10
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 4390000 | PC = 0x0000048c | Inst = 0xfe5212e3 (BRANCH)
+          -> [WB]  WRITE REG | x14 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 4400000 | PC = 0x00000490 | Inst = 0x01a00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x4 <- 0x00000002
+-----------------------------------------------------------------
+Time: 4410000 | PC = 0x00000494 | Inst = 0x04771c63 (BRANCH)
+          -> [WB]  WRITE REG | x5 <- 0x00000002
+-----------------------------------------------------------------
+Time: 4420000 | PC = 0x00000498 | Inst = 0x02300193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 4430000 | PC = 0x0000049c | Inst = 0x00f00093 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000001a
+-----------------------------------------------------------------
+Time: 4440000 | PC = 0x000004a0 | Inst = 0x00100133 (ALU-R )
+-----------------------------------------------------------------
+Time: 4450000 | PC = 0x000004a4 | Inst = 0x00f00393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+          -> [WB]  WRITE REG | x3 <- 0x00000023
+-----------------------------------------------------------------
+Time: 4460000 | PC = 0x000004a8 | Inst = 0x04711263 (BRANCH)
+          -> [WB]  WRITE REG | x1 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 4470000 | PC = 0x000004ac | Inst = 0x02400193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x2 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 4480000 | PC = 0x000004b0 | Inst = 0x02000093 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x0000000f
+-----------------------------------------------------------------
+Time: 4490000 | PC = 0x000004b4 | Inst = 0x00008133 (ALU-R )
+-----------------------------------------------------------------
+Time: 4500000 | PC = 0x000004b8 | Inst = 0x02000393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 01, RS2_sel: 00
+          -> [WB]  WRITE REG | x3 <- 0x00000024
+-----------------------------------------------------------------
+Time: 4510000 | PC = 0x000004bc | Inst = 0x02711863 (BRANCH)
+          -> [WB]  WRITE REG | x1 <- 0x00000020
+-----------------------------------------------------------------
+Time: 4520000 | PC = 0x000004c0 | Inst = 0x02500193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x2 <- 0x00000020
+-----------------------------------------------------------------
+Time: 4530000 | PC = 0x000004c4 | Inst = 0x000000b3 (ALU-R )
+          -> [WB]  WRITE REG | x7 <- 0x00000020
+-----------------------------------------------------------------
+Time: 4540000 | PC = 0x000004c8 | Inst = 0x00000393 (ALU-I )
+-----------------------------------------------------------------
+Time: 4550000 | PC = 0x000004cc | Inst = 0x02709063 (BRANCH)
+          -> [WB]  WRITE REG | x3 <- 0x00000025
+-----------------------------------------------------------------
+Time: 4560000 | PC = 0x000004d0 | Inst = 0x02600193 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x00000000
+-----------------------------------------------------------------
+Time: 4570000 | PC = 0x000004d4 | Inst = 0x01000093 (ALU-I )
+          -> [WB]  WRITE REG | x7 <- 0x00000000
+-----------------------------------------------------------------
+Time: 4580000 | PC = 0x000004d8 | Inst = 0x01e00113 (ALU-I )
+-----------------------------------------------------------------
+Time: 4590000 | PC = 0x000004dc | Inst = 0x00208033 (ALU-R )
+          -> [WB]  WRITE REG | x3 <- 0x00000026
+-----------------------------------------------------------------
+Time: 4600000 | PC = 0x000004e0 | Inst = 0x00000393 (ALU-I )
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 10, RS2_sel: 01
+          -> [WB]  WRITE REG | x1 <- 0x00000010
+-----------------------------------------------------------------
+Time: 4610000 | PC = 0x000004e4 | Inst = 0x00701463 (BRANCH)
+          -> [WB]  WRITE REG | x2 <- 0x0000001e
+-----------------------------------------------------------------
+Time: 4620000 | PC = 0x000004e8 | Inst = 0x02301063 (BRANCH)
+          -> [EX] FORWARDING ACTIVATED | RS1_sel: 00, RS2_sel: 01
+-----------------------------------------------------------------
+Time: 4630000 | PC = 0x000004ec | Inst = 0x0ff0000f (UNKNWN)
+          -> [HAZARD] FLUSH: Clearing pipeline instructions due to Branch/Jump!
+          -> [EX] JUMP/BRANCH TAKEN | PC redirected to 0x00000508
+          -> [WB]  WRITE REG | x7 <- 0x00000000
+-----------------------------------------------------------------
+Time: 4640000 | PC = 0x00000000 | Inst = 0x00018063 (BRANCH)
+-----------------------------------------------------------------
+Time: 4650000 | PC = 0x00000508 | Inst = 0x0ff0000f (UNKNWN)
+-----------------------------------------------------------------
+Time: 4660000 | PC = 0x0000050c | Inst = 0x00100193 (ALU-I )
+-----------------------------------------------------------------
+Time: 4670000 | PC = 0x00000510 | Inst = 0x05d00893 (ALU-I )
+-----------------------------------------------------------------
+Time: 4680000 | PC = 0x00000514 | Inst = 0x00000513 (ALU-I )
+-----------------------------------------------------------------
+Time: 4690000 | PC = 0x00000518 | Inst = 0x00000073 (ECALL )
+          -> [WB]  WRITE REG | x3 <- 0x00000001
+-----------------------------------------------------------------
+Time: 4700000 | PC = 0x0000051c | Inst = 0xc0001073 (ECALL )
+          -> [WB]  WRITE REG | x17 <- 0x0000005d
+-----------------------------------------------------------------
+Time: 4710000 | PC = 0x00000520 | Inst = 0x00000000 (BUBBLE)
+          -> [WB]  WRITE REG | x10 <- 0x00000000
+-----------------------------------------------------------------
+Time: 4720000 | PC = 0x00000520 | Inst = 0x00000000 (BUBBLE)
+          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
+-----------------------------------------------------------------
+Time: 4730000 | PC = 0x00000520 | Inst = 0x00000000 (BUBBLE)
+          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!
+-----------------------------------------------------------------
+
+[SYSTEM] Finished: DONE signal triggered successfully!
+
+==================================================
+         REGISTER FILE STATE AT FINISH            
+==================================================
+ x0 	 = 32'h00000000
+ x1 	 = 32'h00000010
+ x2 	 = 32'h0000001e
+ x3 	 = 32'h00000001
+ x4 	 = 32'h00000002
+ x5 	 = 32'h00000002
+ x6 	 = 32'h0000001a
+ x7 	 = 32'h00000000
+ x8 	 = 32'h00000000
+ x9 	 = 32'h00000000
+ x10 	 = 32'h00000000
+ x11 	 = 32'h0000001a
+ x12 	 = 32'h00000019
+ x13 	 = 32'h00000000
+ x14 	 = 32'h0000001a
+ x15 	 = 32'h00000000
+ x16 	 = 32'h00000000
+ x17 	 = 32'h0000005d
+ x18 	 = 32'h00000000
+ x19 	 = 32'h00000000
+ x20 	 = 32'h00000000
+ x21 	 = 32'h00000000
+ x22 	 = 32'h00000000
+ x23 	 = 32'h00000000
+ x24 	 = 32'h00000000
+ x25 	 = 32'h00000000
+ x26 	 = 32'h00000000
+ x27 	 = 32'h00000000
+ x28 	 = 32'h00000000
+ x29 	 = 32'h00000000
+ x30 	 = 32'h00000000
+ x31 	 = 32'h00000000
+==================================================
+                 SIMULATION ENDED                 
+==================================================
+$finish called at time : 4737 ns : File "D:/Hoc_Tap/Dai_hoc/HK6/DoAn1/Pipeline_RISCV/Pipeline_RISCV.srcs/sources_1/testbench/tb_riscv.v" Line 102
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 7463.129 ; gain = 0.000
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 7463.129 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 16 02:01:10 2026...

@@ -1,5 +1,40 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="nguye" Host="DESKTOP-0UL7VKJ" Pid="2636" HostCore="12" HostMemory="016474386432">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="26260" HostCore="12" HostMemory="016361480192">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="11652" HostCore="12" HostMemory="016361480192">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="1904" HostCore="12" HostMemory="016361480192">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="25948" HostCore="12" HostMemory="016361480192">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="30052" HostCore="12" HostMemory="016361480192">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="31628" HostCore="12" HostMemory="016361480192">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="27392" HostCore="12" HostMemory="016361480192">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="letro" Host="TRONG_HIEU" Pid="19688" HostCore="12" HostMemory="016361480192">
     </Process>
 </ProcessHandle>

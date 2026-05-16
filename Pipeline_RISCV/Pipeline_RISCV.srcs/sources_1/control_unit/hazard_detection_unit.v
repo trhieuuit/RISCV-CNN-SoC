@@ -39,22 +39,21 @@ module hazard_detection_unit (
     output reg        flush_id_ex_o
 );
 
-    always @(*) begin
-        // Default cases
-        stall_pc_if_id_o = 1'b0;
-        flush_if_id_o    = 1'b0;
-        flush_id_ex_o    = 1'b0;
 
-        // Branch prioritized
-        if (ex_branch_taken_i) begin
-            flush_if_id_o = 1'b1;     //Flush in IF/ID 
-            flush_id_ex_o = 1'b1;     //Flush in ID/EX 
-        end
+    
+    // 1. Logic Stall (Only depends on Opcode and Address, available from the beginning of the cycle)
+    wire load_use_hazard = ex_is_load_i && (ex_rd_i != 5'd0) && 
+                          ((ex_rd_i == id_rs1_i) || (ex_rd_i == id_rs2_i));
+                          
+    always @(*) begin
+        stall_pc_if_id_o = load_use_hazard;
+    end
+
+    // 2. Flush Logic (Only depends on the Branch flag, comes late at the end of the cycle))
+    always @(*) begin
+        flush_if_id_o = ex_branch_taken_i;
         
-        // Load-use Hazard lower priority
-        else if (ex_is_load_i && (ex_rd_i != 5'd0) && ((ex_rd_i == id_rs1_i) || (ex_rd_i == id_rs2_i))) begin
-            stall_pc_if_id_o = 1'b1;   //Stall in IF/ID
-            flush_id_ex_o    = 1'b1;   //NOP in ID/EX
-        end
+        // ID/EX is Flush when branching OR when having to inject NOP due to Stall
+        flush_id_ex_o = ex_branch_taken_i | load_use_hazard; 
     end
 endmodule

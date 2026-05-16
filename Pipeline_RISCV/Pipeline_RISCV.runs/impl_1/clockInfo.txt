@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1
-| Date         : Tue Apr  7 20:03:11 2026
-| Host         : DESKTOP-0UL7VKJ
+| Date         : Sat May 16 13:18:11 2026
+| Host         : Trong_Hieu
 | Design       : design_1
 | Device       : xck26-sfvc784-2LV-C-
 -------------------------------------

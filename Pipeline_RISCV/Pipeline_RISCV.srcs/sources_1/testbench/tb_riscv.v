@@ -20,7 +20,7 @@ module tb_riscv();
 //=====================================================================//
 //                       Get Instruction Type                          //
 //=====================================================================//
-    wire [6:0] opcode_w = uut.rv_core.id_instr_w[6:0];
+    wire [6:0] opcode_w = uut.rv_core.instr_i[6:0];
     reg [47:0] inst_name_r; 
     always @(*) begin
         case(opcode_w)
@@ -109,7 +109,7 @@ module tb_riscv();
         if (reset_ni) begin 
             
             $display("Time: %0t | PC = 0x%h | Inst = 0x%h (%s)", 
-                     $time, uut.rv_core.id_pc_data_w, uut.rv_core.id_instr_w, inst_name_r);
+                     $time, uut.rv_core.id_pc_data_w, uut.rv_core.instr_i, inst_name_r);
             
             if (uut.rv_core.done_o) begin
                 $display("          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!");

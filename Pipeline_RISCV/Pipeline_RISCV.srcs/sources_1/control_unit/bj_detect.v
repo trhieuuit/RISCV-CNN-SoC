@@ -32,10 +32,11 @@ module bj_detect(
 //                   Branch Detection                       //
 //==========================================================//	
     // Comparison flag calculation
-    wire eq_w          = (data1_i == data2_i);
-    wire unsigned_lt_w = (data1_i < data2_i);
-    wire signed_lt_w   = ($signed(data1_i) < $signed(data2_i));
-
+    wire [31:0] sub_res = data1_i - data2_i;
+    wire sign_diff = data1_i[31] ^ data2_i[31];
+    wire eq_w = ~(|(data1_i ^ data2_i));
+    wire signed_lt_w = sign_diff ? data1_i[31] : sub_res[31];
+    wire unsigned_lt_w = sign_diff ? data2_i[31] : sub_res[31];
 	
     // Output the signal to control PC's MUX (whether to jump or increase by 4)
     always @(*) begin
