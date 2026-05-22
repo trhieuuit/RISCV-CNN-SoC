@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 
-// Design Name: 
-// Module Name: DMEM
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 //==========================================================//
 //                  Instruction Memory                      //
 //==========================================================//
@@ -46,7 +26,7 @@ module imem#(
     
  // !!! Comment this line if yorue loading machine code in test bench module !!! 
  // !!! Remember to paste the machine code in machine_code.mem !!!
-       $readmemh("fixed_rv32ui-p-sub.hex",  rom_r);
+       $readmemh("machine_code.mem",  rom_r);
        
     end
     
