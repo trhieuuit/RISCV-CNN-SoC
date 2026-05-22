@@ -43,7 +43,7 @@ The processor is capable of executing compiled RISC-V machine code and has been 
 
 ## 🧠 Architecture
 
-
+![Pipeline Diagram](riscv.png)
 
 
 ---
