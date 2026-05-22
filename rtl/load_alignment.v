@@ -3,7 +3,7 @@
 //==========================================================//
 //                     Load Alignment                       //
 //==========================================================//
-
+`include "encoding.v"
 module load_alignment (
     input  wire [3:0]  wb_read_write_i, 
     input  wire [1:0]  addr_offset_i,

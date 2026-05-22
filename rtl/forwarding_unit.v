@@ -2,7 +2,7 @@
 //==========================================================//
 //                    Forwarding Unit                       //
 //==========================================================//
-
+`include "encoding.v"
 module forwarding_unit(
     // EX stage address
     input wire [4:0]    ex_rs1_addr_i,

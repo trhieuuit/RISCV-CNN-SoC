@@ -2,7 +2,7 @@
 //==========================================================//
 //                 Immediate Generator                      //
 //==========================================================//
-
+`include "encoding.v"
 module imme_gen(
 	input [24:0] in_i,  // instruction[31:7]
 	input [2:0] imm_sel_i,

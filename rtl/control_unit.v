@@ -2,6 +2,7 @@
 //==========================================================//
 //                     Control Unit                         //
 //==========================================================//
+`include "encoding.v"
 module control_unit(
     input  wire [6:0] opcode_i,
     input  wire [2:0] funct3_i,

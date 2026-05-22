@@ -2,7 +2,7 @@
 //==========================================================//
 //                    Store Alignment                       //
 //==========================================================//
-
+`include "encoding.v"
 module store_alignment (
     input  wire [3:0]  mem_read_write_i, 
     input  wire [1:0]  addr_offset_i, 
