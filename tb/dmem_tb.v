@@ -1,113 +1,125 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/08/2026 05:35:32 PM
-// Design Name: 
-// Module Name: dmem_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module dmem_tb;
 
+    //==========================================================//
     // Parameters
+    //==========================================================//
+    
     parameter DATA_WIDTH = 32;
-    parameter NUM_VAR   = 32;
-    parameter ADDR_WIDTH = $clog2(NUM_VAR);
+    parameter NUM_WORDS  = 32;
 
+    //==========================================================//
     // Inputs
-    reg clk_i;
-    reg rst_ni;
-    reg [ADDR_WIDTH-1:0] addr_i;
-    reg [31:0] data_i;
-    reg we_i;
+    //==========================================================//
 
-    // Output
+    reg                  clk_i;
+    reg                  en_i;
+    reg  [3:0]           we_i;
+    reg  [31:0]          addr_i;
+    reg  [31:0]          data_i;
+
+    //==========================================================//
+    // Outputs
+    //==========================================================//
+
     wire [31:0] mem_o;
 
-    // Instantiate DUT
+    //==========================================================//
+    // DUT
+    //==========================================================//
+
     dmem #(
         .DATA_WIDTH(DATA_WIDTH),
-        .NUM_VAR(NUM_VAR)
+        .NUM_WORDS(NUM_WORDS)
     ) uut (
-        .clk_i(clk_i),
-        .rst_ni(rst_ni),
+        .clk_i (clk_i),
+        .en_i  (en_i),
+        .we_i  (we_i),
         .addr_i(addr_i),
         .data_i(data_i),
-        .we_i(we_i),
-        .mem_o(mem_o)
+        .mem_o (mem_o)
     );
 
-    // Clock generation (10ns period)
+    //==========================================================//
+    // Clock Generation
+    //==========================================================//
+
     always #5 clk_i = ~clk_i;
 
+    //==========================================================//
+    // Test Sequence
+    //==========================================================//
+
     initial begin
+
         // Initialize
         clk_i  = 0;
-        rst_ni = 0;
-        addr_i = 0;
-        data_i = 0;
-        we_i   = 0;
+        en_i   = 1;
+        we_i   = 4'b0000;
+        addr_i = 32'd0;
+        data_i = 32'd0;
 
-        // Hold reset
-        #12;
-        rst_ni = 1;
+        // Wait a little
+        #20;
 
-        // ------------------------
-        // Test 1: Write to reg 3
-        // ------------------------
-        @(posedge clk_i);
-        addr_i = 5'd3;
+        //======================================================//
+        // Test 1 : Write word to address 3
+        //======================================================//
+
+        @(negedge clk_i);
+        addr_i = 32'd12;          // word index 3 (3*4)
         data_i = 32'hAAAA_BBBB;
-        we_i   = 1;
+        we_i   = 4'b1111;
 
-        @(posedge clk_i);
-        we_i = 0;
+        @(negedge clk_i);
+        we_i = 4'b0000;
 
-        // Read back reg 3
-        @(posedge clk_i);
-        addr_i = 5'd3;
+        // Read back
+        @(negedge clk_i);
+        addr_i = 32'd12;
 
-        // ------------------------
-        // Test 2: Write to reg 7
-        // ------------------------
-        @(posedge clk_i);
-        addr_i = 5'd7;
+        @(negedge clk_i);
+
+        //======================================================//
+        // Test 2 : Write word to address 7
+        //======================================================//
+
+        @(negedge clk_i);
+        addr_i = 32'd28;          // word index 7 (7*4)
         data_i = 32'h1234_5678;
-        we_i   = 1;
+        we_i   = 4'b1111;
 
-        @(posedge clk_i);
-        we_i = 0;
+        @(negedge clk_i);
+        we_i = 4'b0000;
 
-        // Read back reg 7
-        @(posedge clk_i);
-        addr_i = 5'd7;
+        // Read back
+        @(negedge clk_i);
+        addr_i = 32'd28;
 
-        // ------------------------
-        // Test 3: Reset again
-        // ------------------------
-        @(posedge clk_i);
-        rst_ni = 0;
+        @(negedge clk_i);
 
-        @(posedge clk_i);
-        rst_ni = 1;
-        addr_i = 5'd3;
+        //======================================================//
+        // Test 3 : Byte write test
+        //======================================================//
 
-        @(posedge clk_i);
+        @(negedge clk_i);
+        addr_i = 32'd12;
+        data_i = 32'hFFFF_00FF;
+        we_i   = 4'b0001;     // write lowest byte only
 
+        @(negedge clk_i);
+        we_i = 4'b0000;
+
+        @(negedge clk_i);
+
+        //======================================================//
+        // Finish
+        //======================================================//
+
+        #20;
         $stop;
+
     end
 
 endmodule

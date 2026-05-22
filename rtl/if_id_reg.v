@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03/04/2026 04:51:29 PM
-// Design Name: 
-// Module Name: mem_wb_reg
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 //==========================================================//
 //                IF/ID Pipeline Register                   //
 //==========================================================//
@@ -26,7 +7,6 @@ module if_id_reg(
     input wire         clk_i,
     input wire         rst_ni,
     input wire         stall_i,
-    input wire         flush_i,
     
 ////////////// Input ///////////////
     input wire  [31:0] pc_i,

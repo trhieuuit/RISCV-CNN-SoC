@@ -109,7 +109,7 @@ module tb_riscv();
         if (reset_ni) begin 
             
             $display("Time: %0t | PC = 0x%h | Inst = 0x%h (%s)", 
-                     $time, uut.rv_core.id_pc_data_w, uut.rv_core.instr_i, inst_name_r);
+                     $time, uut.rv_core.id_pc_w, uut.rv_core.instr_i, inst_name_r);
             
             if (uut.rv_core.done_o) begin
                 $display("          -> [SYSTEM] FINISH: ECALL caught, CPU is freezing!");
@@ -128,21 +128,21 @@ module tb_riscv();
 
             if (uut.rv_core.mem_we_dmem_w) begin
                 $display("          -> [MEM] WRITE RAM | Addr: 0x%h <- Data: 0x%h", 
-                         uut.rv_core.mem_alu_result_w, uut.rv_core.mem_write_data_w);
+                         uut.rv_core.mem_alu_res_w, uut.rv_core.mem_write_data_w);
             end
 
-            if (uut.rv_core.mem_d_dmemsel_w && !uut.rv_core.mem_we_dmem_w) begin
+            if (uut.rv_core.mem_is_load_w && !uut.rv_core.mem_we_dmem_w) begin
                 $display("          -> [MEM] READ RAM  | Read requested at Addr: 0x%h", 
-                         uut.rv_core.mem_alu_result_w);
+                         uut.rv_core.mem_alu_res_w);
             end
             
-            if (uut.rv_core.wb_reg_write_en_w && (uut.rv_core.wb_rd_w != 5'd0)) begin
-                if (uut.rv_core.wb_d_wbsel_w == 2'b01) begin 
+            if (uut.rv_core.wb_reg_write_en_w && (uut.rv_core.wb_rd_addr_w != 5'd0)) begin
+                if (uut.rv_core.wb_sel_w == 2'b01) begin 
                     $display("          -> [WB]  LOAD REG  | x%0d <- 0x%h (Raw RAM Data: 0x%h)", 
-                             uut.rv_core.wb_rd_w, uut.rv_core.wb_wdata_w, uut.rv_core.data_rdata_i);
+                             uut.rv_core.wb_rd_addr_w, uut.rv_core.wb_wdata_w, uut.rv_core.data_rdata_i);
                 end else begin 
                     $display("          -> [WB]  WRITE REG | x%0d <- 0x%h", 
-                             uut.rv_core.wb_rd_w, uut.rv_core.wb_wdata_w);
+                             uut.rv_core.wb_rd_addr_w, uut.rv_core.wb_wdata_w);
                 end
             end
             $display("-----------------------------------------------------------------");

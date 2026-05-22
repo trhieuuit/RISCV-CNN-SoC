@@ -46,7 +46,7 @@ module imem#(
     
  // !!! Comment this line if yorue loading machine code in test bench module !!! 
  // !!! Remember to paste the machine code in machine_code.mem !!!
-       $readmemh("machine_code.mem",  rom_r);
+       $readmemh("fixed_rv32ui-p-sub.hex",  rom_r);
        
     end
     

@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03/04/2026 08:27:41 PM
-// Design Name: 
-// Module Name: hazard_detection_unit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 //==========================================================//
 //                  Hazard Detection Unit                   //
 //==========================================================//
@@ -38,8 +18,6 @@ module hazard_detection_unit (
     output reg        flush_if_id_o,
     output reg        flush_id_ex_o
 );
-
-
     
     // 1. Logic Stall (Only depends on Opcode and Address, available from the beginning of the cycle)
     wire load_use_hazard = ex_is_load_i && (ex_rd_i != 5'd0) && 

@@ -1,23 +1,7 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/05/2026 12:09:31 AM
-// Design Name: 
-// Module Name: imme_gen
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//==========================================================//
+//                 Immediate Generator                      //
+//==========================================================//
 
 module imme_gen(
 	input [24:0] in_i,  // instruction[31:7]
@@ -25,9 +9,6 @@ module imme_gen(
 	output reg [31:0] out_o
 );
 
-//==========================================================//
-//                 Immediate Generator                      //
-//==========================================================//
 //Calculate all outputs
     wire [31:0] U_OUT_w, J_OUT_w, B_OUT_w, I_SIGN_OUT_w, I_UNSIGN_OUT_w, S_OUT_w, I_SHIFT_OUT_w;
 //U-type Imme

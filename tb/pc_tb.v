@@ -2,59 +2,118 @@
 
 module pc_tb;
 
+    //==========================================================//
     // Inputs
-    reg clk_i;
-    reg rst_ni;
-    reg branch_i;
-    reg [31:0] jaddr_i;
+    //==========================================================//
 
-    // Output
+    reg         clk_i;
+    reg         rst_ni;
+    reg         stall_i;
+    reg [31:0]  pc_next_i;
+
+    //==========================================================//
+    // Outputs
+    //==========================================================//
+
     wire [31:0] pc_o;
 
-    // Instantiate DUT (Device Under Test)
+    //==========================================================//
+    // DUT
+    //==========================================================//
+
     pc uut (
-        .clk_i(clk_i),
-        .rst_ni(rst_ni),
-        .branch_i(branch_i),
-        .jaddr_i(jaddr_i),
-        .pc_o(pc_o)
+        .clk_i    (clk_i),
+        .rst_ni   (rst_ni),
+        .stall_i  (stall_i),
+        .pc_next_i(pc_next_i),
+        .pc_o     (pc_o)
     );
 
-    // Clock generation (10ns period → 100 MHz)
+    //==========================================================//
+    // Clock Generation
+    //==========================================================//
+
     always #5 clk_i = ~clk_i;
 
-    initial begin
-        // Initialize signals
-        clk_i   = 0;
-        rst_ni  = 0;
-        branch_i = 0;
-        jaddr_i = 0;
+    //==========================================================//
+    // Test Sequence
+    //==========================================================//
 
-        // Hold reset for a few cycles
+    initial begin
+
+        // Initialize
+        clk_i     = 0;
+        rst_ni    = 0;
+        stall_i   = 0;
+        pc_next_i = 32'h00000000;
+
+        ////////////////////////////////////////////////////////
+        // Reset
+        ////////////////////////////////////////////////////////
+
         #12;
         rst_ni = 1;
 
-        // Let PC increment normally
-        #40;
+        ////////////////////////////////////////////////////////
+        // Test 1 : Normal PC update
+        ////////////////////////////////////////////////////////
 
-        // Trigger branch
-        branch_i = 1;
-        jaddr_i  = 32'h00000020;
+        @(negedge clk_i);
+        pc_next_i = 32'h00000004;
+
+        @(posedge clk_i);
+        #1;
+        $display("PC = %h", pc_o);
+
+        @(negedge clk_i);
+        pc_next_i = 32'h00000008;
+
+        @(posedge clk_i);
+        #1;
+        $display("PC = %h", pc_o);
+
+        ////////////////////////////////////////////////////////
+        // Test 2 : Stall PC
+        ////////////////////////////////////////////////////////
+
+        @(negedge clk_i);
+        stall_i   = 1'b1;
+        pc_next_i = 32'h0000000C;
+
+        @(posedge clk_i);
+        #1;
+        $display("STALL PC = %h", pc_o);
+
+        ////////////////////////////////////////////////////////
+        // Test 3 : Release stall
+        ////////////////////////////////////////////////////////
+
+        @(negedge clk_i);
+        stall_i   = 1'b0;
+        pc_next_i = 32'h0000000C;
+
+        @(posedge clk_i);
+        #1;
+        $display("PC = %h", pc_o);
+
+        ////////////////////////////////////////////////////////
+        // Test 4 : Jump/Branch target simulation
+        ////////////////////////////////////////////////////////
+
+        @(negedge clk_i);
+        pc_next_i = 32'h00000080;
+
+        @(posedge clk_i);
+        #1;
+        $display("JUMP PC = %h", pc_o);
+
+        ////////////////////////////////////////////////////////
+        // Finish
+        ////////////////////////////////////////////////////////
+
         #10;
+        $finish;
 
-        // Disable branch → continue increment
-        branch_i = 0;
-        #40;
-
-        // Another branch
-        branch_i = 1;
-        jaddr_i  = 32'h00000080;
-        #10;
-        branch_i = 0;
-
-        #40;
-
-        $stop;  // Stop simulation
     end
 
 endmodule

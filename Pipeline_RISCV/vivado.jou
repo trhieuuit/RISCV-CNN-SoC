@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu May 21 16:45:47 2026
+# Process ID         : 6576
+# Current directory  : C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/Pipeline_RISCV
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21916 C:\Users\nguye\Desktop\RISCV-CNN-SoC-temp1\Pipeline_RISCV\Pipeline_RISCV.xpr
+# Log file           : C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/Pipeline_RISCV/vivado.log
+# Journal file       : C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/Pipeline_RISCV\vivado.jou
+# Running On         : DESKTOP-0UL7VKJ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16474 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 26674 MB
+# Available Virtual  : 7041 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/Pipeline_RISCV/Pipeline_RISCV.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_riscv.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_riscv.tcl
+close_sim
+add_files -norecurse -scan_for_includes {C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/tb_riscv.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/imem_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/if_id_wrapper_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/unsigned_div_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/alu_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/imme_gen_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/reg_file_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/div_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/dmem_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/forwarding_unit_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/mul_tb.v C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/pc_tb.v}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+export_ip_user_files -of_objects  [get_files C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/tb_riscv.v] -no_script -reset -force -quiet
+remove_files  C:/Users/nguye/Desktop/RISCV-CNN-SoC-temp1/tb/tb_riscv.v
+launch_simulation
+source tb_riscv.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top dmem_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+source dmem_tb.tcl
+close_sim

@@ -38,21 +38,21 @@ module id_ex_reg(
     input wire [4:0]  rs2_addr_i,
     input wire [31:0] imm_i,
     input wire        is_jalr_i,
-    input wire        cpu_halted_i,
+    input wire        done_i,
 //EX
     input wire        d1_alusel_i,
     input wire        d2_alusel_i,
     input wire [1:0]  d1_bjsel_i,
     input wire [1:0]  d2_bjsel_i,
     input wire [4:0]  op_alu_i,
-    input wire [2:0]  op_bl_i,
+    input wire [2:0]  bju_op_i,
 //MEM
-    input wire        d_dmemsel_i,
-    input wire        we_dmem_i,
+    input wire        is_load_i,
+    input wire        dmem_we_i,
     input wire [3:0]  rw_dmem_i,
 //WB
-    input wire [1:0]  d_wbsel_i,
-    input wire        we_regfile_i,
+    input wire [1:0]  wb_sel_i,
+    input wire        reg_we_i,
     
 ////////////// Output ///////////////
 //IF      
@@ -65,21 +65,21 @@ module id_ex_reg(
     output reg [4:0]  rs2_addr_o,
     output reg [31:0] imm_o,
     output reg        is_jalr_o,
-    output reg        cpu_halted_o,
+    output reg        done_o,
 //EX
     output reg [1:0]  d1_alusel_o,
     output reg [1:0]  d2_alusel_o,
     output reg [1:0]  d1_bjsel_o,
     output reg [1:0]  d2_bjsel_o,
     output reg [4:0]  op_alu_o,
-    output reg [2:0]  op_bl_o,
+    output reg [2:0]  bju_op_o,
 //MEM   
-    output reg        d_dmemsel_o,
-    output reg        we_dmem_o,
+    output reg        is_load_o,
+    output reg        dmem_we_o,
     output reg [3:0]  rw_dmem_o,
 //WB
-    output reg [1:0]  d_wbsel_o,
-    output reg        we_regfile_o
+    output reg [1:0]  wb_sel_o,
+    output reg        reg_we_o
 );
     
 always @(posedge clk_i) begin
@@ -96,22 +96,22 @@ always @(posedge clk_i) begin
         d1_bjsel_o    <= 2'b0;
         d2_bjsel_o    <= 2'b0;
         op_alu_o      <= 5'b0;
-        op_bl_o       <= 3'b010;
+        bju_op_o       <= 3'b010;
         is_jalr_o     <= 1'b0;
-        d_dmemsel_o   <= 1'b0;
-        we_dmem_o     <= 1'b0;
+        is_load_o   <= 1'b0;
+        dmem_we_o     <= 1'b0;
         rw_dmem_o     <= 4'b0;
-        d_wbsel_o     <= 2'b0;
-        we_regfile_o  <= 1'b0;
-        cpu_halted_o  <= 1'b0;
+        wb_sel_o     <= 2'b0;
+        reg_we_o  <= 1'b0;
+        done_o  <= 1'b0;
         
     end else if (flush_i) begin
-        we_regfile_o  <= 1'b0;
-        we_dmem_o     <= 1'b0;
-        d_dmemsel_o   <= 1'b0;
-        op_bl_o       <= 3'b010; 
+        reg_we_o  <= 1'b0;
+        dmem_we_o     <= 1'b0;
+        is_load_o   <= 1'b0;
+        bju_op_o       <= 3'b010; 
         is_jalr_o     <= 1'b0;
-        cpu_halted_o  <= 1'b0;
+        done_o  <= 1'b0;
         
         pc_o          <= pc_i;
         rd_o          <= rd_i;
@@ -126,7 +126,7 @@ always @(posedge clk_i) begin
         d2_bjsel_o    <= d2_bjsel_i;
         op_alu_o      <= op_alu_i;
         rw_dmem_o     <= rw_dmem_i;
-        d_wbsel_o     <= d_wbsel_i;   
+        wb_sel_o     <= wb_sel_i;   
     end else begin
         pc_o          <= pc_i;
         rd_o          <= rd_i;
@@ -140,14 +140,14 @@ always @(posedge clk_i) begin
         d1_bjsel_o    <= d1_bjsel_i;
         d2_bjsel_o    <= d2_bjsel_i;
         op_alu_o      <= op_alu_i;
-        op_bl_o       <= op_bl_i;
+        bju_op_o       <= bju_op_i;
         is_jalr_o     <= is_jalr_i;
-        d_dmemsel_o   <= d_dmemsel_i;
-        we_dmem_o     <= we_dmem_i;
+        is_load_o   <= is_load_i;
+        dmem_we_o     <= dmem_we_i;
         rw_dmem_o     <= rw_dmem_i;
-        d_wbsel_o     <= d_wbsel_i;
-        we_regfile_o  <= we_regfile_i;
-        cpu_halted_o  <= cpu_halted_i;
+        wb_sel_o     <= wb_sel_i;
+        reg_we_o  <= reg_we_i;
+        done_o  <= done_i;
     end
 end
 
