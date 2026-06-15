@@ -29,7 +29,7 @@ The project follows a modular design, separating the datapath components (ALU, R
 
 * **Hardware Description Language**: Verilog (IEEE 1364-2005)
 * **EDA Tool**: Xilinx Vivado 2025.1
-* **Verification**: Custom assembly testbench suites
+* **Verification**: riscv-tests
 * **Target Architecture**: RISC-V RV32I
 
 ## Repository Structure
@@ -40,9 +40,8 @@ The project follows a modular design, separating the datapath components (ALU, R
 * `/hex_tests`: Compiled machine code vectors for memory initialization.
 * `/images`: Documentation assets and design diagrams.
 * `/rtl`: Core reusable hardware modules.
-* `/scripts`: Tcl scripts for automated project generation.
 * `/tb`: RTL behavioral simulation testbenches.
-
+* `/utils`: Additional utility files and scripts.
 ---
 
 ## Installation & Usage
@@ -65,6 +64,7 @@ vivado -mode batch -source scripts/build_project.tcl
 **3. Verification:**
 Load the `.hex` files from `/hex_tests` into the instruction memory in your simulation environment to execute sample programs.
 
+![Verification](images/verify.png)
 ---
 
 ## Implementation Results
@@ -75,7 +75,7 @@ The following metrics summarize the physical design performance after implementa
 | --- | --- |
 | **Timing Closure** | ![Timing Closure](images/timing.png) |
 | **Resource Utilization** | ![Resource Utilization](images/utilization.png) |
-| **Device Floorplan** | ![Device Floorplan](images/device_floor.png) |
+| **Device Floorplan** | ![Device Floorplan](images/device_floorplan.png) |
 | **Power Profile** |![Power Profile](images/power.png)  |
 
 ---
@@ -84,17 +84,14 @@ The following metrics summarize the physical design performance after implementa
 
 Verification logs demonstrate correct instruction execution against the CPU golden model.
 
+![Result](images/result.png)
 ---
 
 ## Contributing
 
 Contributions are greatly appreciated. Please fork the repo, create a feature branch, and open a Pull Request.
 
-## License
 
-Distributed under the MIT License. See `LICENSE` file for more information.
-
-```
 
 
 Chúc bạn bảo vệ đồ án thành công!
