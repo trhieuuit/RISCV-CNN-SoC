@@ -73,10 +73,10 @@ The following metrics summarize the physical design performance after implementa
 
 | Metric | Visualization |
 | --- | --- |
-| **Timing Closure** |  |
-| **Resource Utilization** |  |
-| **Device Floorplan** |  |
-| **Power Profile** |  |
+| **Timing Closure** | ![Timing Closure](images/timing.png) |
+| **Resource Utilization** | ![Resource Utilization](images/utilization.png) |
+| **Device Floorplan** | ![Device Floorplan](images/device_floor.png) |
+| **Power Profile** |![Power Profile](images/power.png)  |
 
 ---
 
