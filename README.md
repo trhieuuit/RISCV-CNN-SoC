@@ -78,6 +78,10 @@ The following metrics summarize the physical design performance after implementa
 | **Device Floorplan** | ![Device Floorplan](images/device_floorplan.png) |
 | **Power Profile** |![Power Profile](images/power.png)  |
 
+### Performance & Timing Analysis
+The pipelined RISC-V processor successfully achieves strict timing closure with zero violations. Driven by the Zynq UltraScale+ PS at a baseline clock of **100 MHz** ($T = 10 \text{ ns}$), the implementation reports a robust Worst Negative Slack (WNS) of **+3.289 ns**. 
+
+This substantial positive slack indicates that the longest critical path delay in the 5-stage pipeline is only **6.711 ns**. Consequently, the theoretical maximum operating frequency ($F_{max}$) for this hardware accelerator is **~149 MHz**, demonstrating a highly optimized datapath ready for clock scaling if required.
 ---
 
 ## Expected Output
