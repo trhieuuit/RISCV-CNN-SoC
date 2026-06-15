@@ -1,109 +1,102 @@
-# RISC-V RV32I 5-Stage Pipeline Core on FPGA (KV260)
 
-## 📌 Overview
+# RV32I RISC-V Processor Design
 
-This project implements a **fully functional 32-bit RISC-V (RV32I) processor** using a **5-stage pipeline architecture** and deploys it on the **Xilinx KV260 FPGA platform**. The design is written in Verilog.
-
-The processor is capable of executing compiled RISC-V machine code and has been validated through simulation (using [riscv-test](https://github.com/riscv-software-src/riscv-tests)) and real FPGA deployment.
-
+A complete implementation of the **RV32I base integer instruction set architecture (ISA)**. This repository showcases the architectural evolution from a foundational single-cycle processor to a high-performance, 5-stage pipelined design, verified through comprehensive simulation and physical implementation metrics.
 
 ---
 
-## 🚀 Features
+## Architecture Overview
 
-* RV32I base instruction set support
-* 5-stage pipeline:
+The project follows a modular design, separating the datapath components (ALU, Register File, Control Unit) to facilitate scalability and ease of verification.
 
-  * Instruction Fetch (IF)
-  * Instruction Decode (ID)
-  * Execute (EX)
-  * Memory (MEM)
-  * Write Back (WB)
-* Hazard handling:
-
-  * Data forwarding and Pipeline stalling (for Load instructions)
-  * Control hazard flushing
-* FPGA-tested with KV260
-
+![System Architecture](images/architecture.png)
+![Block Design](images/block_design.png)
 
 ---
 
-## 🧩 Supported Instructions (RV32I)
+## Core Features
 
-
-* R-type: ADD, SUB, AND, OR, XOR, SLT
-* I-type: ADDI, LW, ANDI, ORI
-* S-type: SW
-* B-type: BEQ, BNE
-* U-type: LUI
-* J-type: JAL
-* System: ECALL (set Done flag)
+* **RV32I Compliance**: Full support for the base integer instruction set.
+* **Dual Architecture Models**: 
+    * `cpu_single_cycle`: Foundational design for core logic validation.
+    * `Pipeline_RISCV`: Optimized 5-stage pipeline (IF, ID, EX, MEM, WB) for high-throughput execution.
+* **Hazard Management**: Implements a robust **Forwarding Unit** and **Stall logic** to resolve Data and Control hazards.
+* **Verification Suite**: Comprehensive assembly and machine-code test suite for ISA compliance.
 
 ---
 
-## 🧠 Architecture
+## Built With
 
-![Pipeline Diagram](riscv.png)
+* **Hardware Description Language**: Verilog (IEEE 1364-2005)
+* **EDA Tool**: Xilinx Vivado 2025.1
+* **Verification**: Custom assembly testbench suites
+* **Target Architecture**: RISC-V RV32I
 
+## Repository Structure
+
+* `/cpu_single_cycle`: Single-cycle implementation logic.
+* `/Pipeline_RISCV`: Pipelined processor implementation with hazard detection.
+* `/Embedded_C_Code`: Software stacks and C firmware for testing.
+* `/hex_tests`: Compiled machine code vectors for memory initialization.
+* `/images`: Documentation assets and design diagrams.
+* `/rtl`: Core reusable hardware modules.
+* `/scripts`: Tcl scripts for automated project generation.
+* `/tb`: RTL behavioral simulation testbenches.
 
 ---
 
-## 🧪 Simulation
+## Installation & Usage
 
-### ⚙️ Setup
-- Set `tb_riscv.v` as the **top module**
-- Load RISC-V instructions into **instruction memory (IMEM)** using one of the methods below
-
----
-
-###  Method 1: Load instructions in `tb_riscv.v`
-
-```verilog
-module tb_riscv.v (
-...
-  uut.instruction_memory.rom_r[0] = 32'h00500093;  // addi x1, x0, 5 
-  uut.instruction_memory.rom_r[1] = 32'h00a00113;  // addi x2, x0, 10
-  uut.instruction_memory.rom_r[2] = 32'h002081b3;  // add  x3, x1, x2
-...
+**1. Clone the repository:**
+```bash
+git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git)
+cd YourRepoName
 
 ```
----
-###  Method 2: Load instructions using `imem.v`
-- In `imem.v`
-```verilog
-module imem#((
-...
-  // !!! Comment this line if yorue loading machine code in test bench module !!! 
-  // !!! Remember to paste the machine code in machine_code.mem !!!
-  $readmemh("machine_code.mem",  rom_r);
-...
+
+**2. Rebuild the Vivado Project:**
+To automatically restore the project (including all IP and block design configurations):
+
+```bash
+vivado -mode batch -source scripts/build_project.tcl
+
 ```
-- Then paste the instructions in `machine_code.mem`
+
+**3. Verification:**
+Load the `.hex` files from `/hex_tests` into the instruction memory in your simulation environment to execute sample programs.
 
 ---
 
-## ⚙️ FPGA Integration (KV260)
+## Implementation Results
 
-### 🔌 Bitstream Generation & Programming
-- Check block design in `design1.bd`
-- Set top module as `design_1_wrapper.v`
-- Generate bitstream
-- Load `design1_wrapper.bit` from `Pipeline_RISCV\Pipeline_RISCV.runs\impl_1\` into KV260 FPGA
+The following metrics summarize the physical design performance after implementation on the target FPGA.
 
-### 💻 Embedded 
-
-
-## 📊 Performance
-
-* Tested frequency:  100 MHz
-* Critical path slack: 1.49 ns
-* Estimated max frequency: 117.5 MHz
-	
+| Metric | Visualization |
+| --- | --- |
+| **Timing Closure** |  |
+| **Resource Utilization** |  |
+| **Device Floorplan** |  |
+| **Power Profile** |  |
 
 ---
 
-## 📚 Future Improvements
+## Expected Output
 
-* Integrate with an accelerator (Systolic array or CGRA)
-  
+Verification logs demonstrate correct instruction execution against the CPU golden model.
 
+---
+
+## Contributing
+
+Contributions are greatly appreciated. Please fork the repo, create a feature branch, and open a Pull Request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` file for more information.
+
+```
+
+
+Chúc bạn bảo vệ đồ án thành công!
+
+```
