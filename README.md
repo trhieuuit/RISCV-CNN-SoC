@@ -49,8 +49,8 @@ The project follows a modular design, separating the datapath components (ALU, R
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git)
-cd YourRepoName
+git clone [https://github.com/trhieuuit/RISCV-CNN-SoC.git](https://github.com/trhieuuit/RISCV-CNN-SoC.git)
+cd RISCV-CNN-SoC
 
 ```
 
